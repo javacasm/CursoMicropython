@@ -14,9 +14,8 @@ El usar un lenguaje de más alto nivel nos permite desarrollar proyectos más co
 A lo largo de este curso aprenderemos a programar aplicaciones en plataformas como [m5Stack](https://m5stack.com/), que permite la fácil conexión de módulos y complementos para la creación de aplicaciones profesionales o [ESP32](https://www.espressif.com/en/products/socs/esp32) muy popular en el mundo maker
 
 
-## Contenido
+# Contenido
 
-120 Horas / 8 Semanas
 
 ## 0. Introducción a micropython
 * Historia de micropython
@@ -24,10 +23,10 @@ A lo largo de este curso aprenderemos a programar aplicaciones en plataformas co
 * Placas y sistemas que lo soportan
 
 ## 1. Placas y sistemas programables con micropython
+* micro:bit
 * m5Stack
 * ESP32
 * Raspberry Pico
-* Raspberry Pi
 * Instalación de firmware en equipos
 
 ## 2. Entornos de programación de sistemas embebidos
@@ -94,14 +93,3 @@ A lo largo de este curso aprenderemos a programar aplicaciones en plataformas co
 * Conexión con librerías C++
 * Creación de módulos python
 
-## Recursos
-
-Documentación y recursos
-
-https://github.com/pythoncanarias/upython
-
-https://microtutorialesdc.com/course/programing/micropython
-
-https://github.com/mytechnotalent/MicroPython-For-micro-bit
-
-![Licencia CC](./images/Licencia_cc_peque.png)

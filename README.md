@@ -1,5 +1,10 @@
 # micropython: Python para programar microncontroladores y sistemas embebidos
 
+![Licencia CC](./images/Licencia_cc_peque.png)
+
+Licencia CC by SA @javacasm
+Marzo 2021
+
 A día de hoy existen un amplia variedad de sistemas embebidos programables en Python, un lenguaje mucho más sencillo de usar que el tradicional C++ en el que se suelen usar estos sistemas.
 
 Estos sistemas embebidos, como el **ESP32** o la serie m5Stack o la mismísima **Raspberry**, o la muy popular ahora **micro:bit** con su mayor potencia y conectividad nos facilitan el uso de entornos de trabajo donde podemos trabajar de un modo más cómodo. También existen sistemas con un acabado casi industrial como **m5Stack**.
@@ -98,3 +103,5 @@ https://github.com/pythoncanarias/upython
 https://microtutorialesdc.com/course/programing/micropython
 
 https://github.com/mytechnotalent/MicroPython-For-micro-bit
+
+![Licencia CC](./images/Licencia_cc_peque.png)

@@ -1,4 +1,4 @@
-# micropython: Python para programar microncontroladores y sistemas embebidos
+# micropython: Python para programar microcontroladores y sistemas embebidos
 
 ![Licencia CC](./images/Licencia_cc_peque.png)
 
@@ -7,9 +7,9 @@ Marzo 2021
 
 A día de hoy existen un amplia variedad de sistemas embebidos programables en Python, un lenguaje mucho más sencillo de usar que el tradicional C++ en el que se suelen usar estos sistemas.
 
-Estos sistemas embebidos, como el **ESP32** o la serie m5Stack o la mismísima **Raspberry**, o la muy popular ahora **micro:bit** con su mayor potencia y conectividad nos facilitan el uso de entornos de trabajo donde podemos trabajar de un modo más cómodo. También existen sistemas con un acabado casi industrial como **m5Stack**.
+Estos sistemas embebidos, como el **ESP32** o la serie **m5Stack**  o la muy popular ahora **micro:bit** con su mayor potencia y conectividad nos facilitan el uso de entornos de trabajo donde podemos programar de un modo más cómodo. Algunos de estos sistemas tienen un acabado casi industrial como **m5Stack**, mientras que otros están más orientados hacia la robótica más sencilla.
 
-El usar un lenguaje de más alto nivel nos permite desarrollar proyectos más complejos con un menor conocimiento. Por ejemplo podemos utilizar con la misma sencillez que lo hacemos en Python acceso a ficheros o a base de datos, lo que nos posibilita a crear aplicaciones completamente embebidas en estos sistemas.
+El usar un lenguaje de más alto nivel como Python, nos permite desarrollar proyectos más complejos con un menor conocimiento. Por ejemplo podemos utilizar con la misma sencillez que lo hacemos en Python acceso a ficheros o a base de datos, lo que nos posibilita a crear aplicaciones completamente embebidas en estos sistemas.
 
 A lo largo de este curso aprenderemos a programar aplicaciones en plataformas como [m5Stack](https://m5stack.com/), que permite la fácil conexión de módulos y complementos para la creación de aplicaciones profesionales o [ESP32](https://www.espressif.com/en/products/socs/esp32) muy popular en el mundo maker
 

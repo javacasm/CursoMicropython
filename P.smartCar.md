@@ -1,5 +1,14 @@
 # Proyecto: transplante de cerebro micropython a un smartCar
 
+0. Test ESP32
+
+Encendemos el led inteno (que duplicamos fuera para facilitar)
+
+0. Control remoto
+
+Configuración wifi
+Configuración WifiREPL
+
 1. Confguramos los pines [Definición](./codigo/smartCar/elegoCar.py)
 
 ```python
@@ -147,4 +156,6 @@ def testSL():
         print(f'{sensorSL_L.value()} - {sensorSL_C.value()} - {sensorSL_R.value()}')
         time.sleep(0.5)
 ```
+
+n. Pantalla 16x8
 

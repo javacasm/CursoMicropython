@@ -6,7 +6,7 @@ import elegoCar
 import motor
 
 
-v = '0.3.2'
+v = '0.4.2'
 
 pinServo = 25 # D3
 
@@ -24,9 +24,29 @@ enB = 27 # D6
 maxSpeed = 1023
 
 servoUS = machine.PWM(machine.Pin(pinServo), freq = 50)
+servoUS.duty(centralServo)
+
 
 m1 = motor.motor(in1, in2, enA)
+m1.stop()
 m2 = motor.motor(in4, in3, enB)
+m2.stop()
+
+# sensor siguelineas
+
+SL_L = 26 # D2
+SL_C = 17 # D4
+SL_R = 5  # D10
+
+sensorSL_L = machine.Pin(SL_L, machine.Pin.IN)
+sensorSL_C = machine.Pin(SL_C, machine.Pin.IN)
+sensorSL_R = machine.Pin(SL_R, machine.Pin.IN)
+
+def testSL():
+    while True:
+        print(f'{sensorSL_L.value()} - {sensorSL_C.value()} - {sensorSL_R.value()}')
+        time.sleep(0.5)
+
 
 def testM1():
     testMotor(m1)

@@ -7,7 +7,54 @@ Encendemos el led inteno (que duplicamos fuera para facilitar)
 0. Control remoto
 
 Configuración wifi
-Configuración WifiREPL
+
+```python
+>>> import network
+>>> w = network.WLAN(network.STA_IF)
+>>> w.active(True)
+>>> w.connect('OpenWrt','qazxcvbgtrewsdf')
+>>> w.isconnected()
+True
+>>> w.ifconfig()
+('192.168.1.94', '255.255.255.0', '192.168.1.1', '192.168.1.1')
+```
+
+Configuración webREPL
+
+```python
+>>> import webrepl_setup
+WebREPL daemon auto-start status: disabled
+
+Would you like to (E)nable or (D)isable it running on boot?
+(Empty line to quit)
+> E
+To enable WebREPL, you must set password for it
+New password (4-9 chars): MyPassword
+Confirm password: MyPassword
+Changes will be activated after reboot
+Would you like to reboot now? (y/n) 
+y
+```
+
+Reseteamos la placa y  descargamos el cliente webRepl de https://github.com/micropython/webrepl y abrimos en nuestro navegador web la página **webrepl.html**
+
+FOTO
+
+
+Personalmente he cambiado en el fichero webrepl.html la ip que sale por defecto para use la de mi ESP32, cambiando la línea 49 que queda así:
+
+```html
+<input type="text" name="webrepl_url" id="url" value="ws://192.168.1.94:8266/" />
+```
+
+FOTO
+
+También podemos configurar Thonny para conectarnos vía webRepl, instalando el pluggin "websockets" y estableciendo en el menú de intérprete el tipo de conexión webRepl
+
+(PONER FOTOS)
+
+
+
 
 1. Confguramos los pines [Definición](./codigo/smartCar/elegoCar.py)
 
@@ -156,6 +203,18 @@ def testSL():
         print(f'{sensorSL_L.value()} - {sensorSL_C.value()} - {sensorSL_R.value()}')
         time.sleep(0.5)
 ```
+
+4.2. No te caigas
+
+
+
+5. Telemetría
+
+5.2 Sensor meteo
+
+6. Control remoto
+
+
 
 n. Pantalla 16x8
 

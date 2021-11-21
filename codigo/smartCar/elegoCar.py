@@ -6,7 +6,7 @@ import elegoCar
 import motor
 
 
-v = '0.4.2'
+v = '0.4.5'
 
 pinServo = 25 # D3
 
@@ -47,6 +47,15 @@ def testSL():
         print(f'{sensorSL_L.value()} - {sensorSL_C.value()} - {sensorSL_R.value()}')
         time.sleep(0.5)
 
+def noTeCaigas():
+    adelante(800)
+    while sensorSL_C.value() == 1:
+        print('Blanco')
+        time.sleep(0.1)
+    adelante(-800)
+    time.sleep(0.05)
+    stop()
+    print('Paro')
 
 def testM1():
     testMotor(m1)
@@ -61,6 +70,10 @@ def testMotor(m):
 def adelante(speed):
     m1.move(speed)
     m2.move(speed)
+
+def stop():
+    m1.stop()
+    m2.stop()
 
 def testRobot():
     for speed in range(-1 * maxSpeed, maxSpeed, 100):

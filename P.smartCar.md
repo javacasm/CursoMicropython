@@ -206,7 +206,11 @@ def testSL():
 
 4.2. No te caigas
 
+4.3. SigueLíneas
 
+![](https://pbs.twimg.com/media/FEt9PChWUAMfV_3?format=png)
+
+Esquema cortesía de Antonio Gomez
 
 5. Telemetría
 

@@ -6,15 +6,18 @@ import config
 
 sensorDHT22 = dht.DHT22(machine.Pin(14))
 
-v = '0.6.6'
+v = '0.6.8'
 
 led = machine.Pin(config.pin_led_builtIn, machine.Pin.OUT)
-led.off()
+if config.LED_INVERTED: led.on()
+else: led.off()
 
 def tick(duracion):
-    led.on()
+    if config.LED_INVERTED: led.off()
+    else: led.on()
     time.sleep(duracion)
-    led.off()
+    if config.LED_INVERTED: led.on()
+    else: led.off()
 
 def doubleTick(duracion):
     tick(duracion)

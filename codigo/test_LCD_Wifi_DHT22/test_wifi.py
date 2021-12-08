@@ -20,7 +20,7 @@ def initWifi(ssid,passwd):
             
     msg = f'{w.ifconfig()}'
     return msg
-
+    
 
 def test_wifi():
     msg = initWifi(config.SSID,config.PASSWD_WIFI)

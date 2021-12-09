@@ -4,3 +4,4 @@
 # Para I2C hay que subir los ficheros arch_i2c_lcd.py y lcd_api.py, siendo arch el correspondiente
 
 
+[Otra librería alternativa](https://github.com/micropython-Chinese-Community/mpy-lib/tree/master/lcd/I2C_LCD1602)

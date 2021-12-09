@@ -1,6 +1,6 @@
 # main mqtt
 
-v = '0.6.1'
+v = '0.6.2'
 
 import machine
 import time
@@ -15,11 +15,11 @@ import test_DHT22
 if machine.reset_cause() == machine.DEEPSLEEP_RESET:
     print('woke from a deep sleep')
 
-msgWifi = test_wifi.initWifi(config.SSID,config.PASSWD_WIFI)
-
+infoWifi = test_wifi.initWifi(config.SSID,config.PASSWD_WIFI)
+msgWifi=f'ip: {infoWifi[0]}'
 print(msgWifi)
 test_lcd.showLcd(msgWifi)
-time.sleep(5)
+
 
 
 # MQTT_test.mainMQTT()

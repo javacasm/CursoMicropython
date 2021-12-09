@@ -3,7 +3,7 @@ import time
 
 import config
 
-v='0.5.1'
+v='0.5'
 
 
 def initWifi(ssid,passwd):
@@ -18,8 +18,8 @@ def initWifi(ssid,passwd):
             time.sleep(1)
             print('.', end = '')
             
-    wifi_info = w.ifconfig()
-    return wifi_info
+    msg = f'{w.ifconfig()}'
+    return msg
     
 
 def test_wifi():

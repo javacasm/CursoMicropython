@@ -1,12 +1,16 @@
 # Test Sensor capacitivo TouchPad
 
-v = '0.1'
+v = '0.5.1'
 
 import machine
 import time
+import config
 
-tPad12 = machine.TouchPad(machine.Pin(12))
+tPad = machine.TouchPad(machine.Pin(config.pinTouch))
+print(f'Using Touch @ {config.pinTouch}')
 
-while True:
-  print(tPad12.read())
-  time.sleep(0.2)
+
+def test_forever():
+    while True:
+      print(tPad.read())
+      time.sleep(0.2)

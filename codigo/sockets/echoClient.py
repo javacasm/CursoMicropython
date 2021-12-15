@@ -11,7 +11,7 @@ def debug(msg):
 
 def testUDP(server = '192.168.1.33', port = 10086,message = 'Hola caracola'):
     global paquetes, errores
-    socket.setdefaulttimeout(1)
+    socket.setdefaulttimeout(1) # https://medium.com/pipedrive-engineering/socket-timeout-an-important-but-not-simple-issue-with-python-4bb3c58386b4
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     server_address = (server, port)
     

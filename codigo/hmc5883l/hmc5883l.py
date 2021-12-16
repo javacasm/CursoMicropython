@@ -18,7 +18,7 @@ class HMC5883L:
     }
 
     def __init__(self, scl=4, sda=5, address=30, gauss='1.3', declination=(0, 0)):
-        self.i2c = i2c = machine.I2C(scl=machine.Pin(scl), sda=machine.Pin(sda), freq=100000)
+        self.i2c = i2c = machine.SoftI2C(scl=machine.Pin(scl), sda=machine.Pin(sda), freq=100000)
 
         # Initialize sensor.
         i2c.start()

@@ -3,19 +3,20 @@
 
 import machine
 import time
+import config
 
-D7 = 14
-
-servo7 = machine.PWM(machine.Pin(D7),freq = 50)
+servo = machine.PWM(machine.Pin(config.pin_servo),freq = 50)
+print(f'servo @ {config.pin_servo} ')
 
 minPos = 70
 maxPos = 90
 retardo = 5.0
 
-def moveServo(pin, inicial, final, retardo):
+def moveServo(inicial, final, retardo):
     paso = 1
+    # retardo /= 1000.0
     if final<inicial:
         paso = -1
     for i in range(inicial,final,paso):
-        servo7.duty(i)
-        time.sleep(retardo)    
+        servo.duty(i)
+        time.sleep_ms(retardo)    

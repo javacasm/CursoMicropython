@@ -1,31 +1,33 @@
-import socket
+import config
+import test_DTH22
+import test_hmc5883l
 
-v= '0.5.3'
+v = '0.4'
 
-paquetes = 0
-errores = 0
-verbose = False
+MY_ID = config.BOARD
+
+verbose = True
 
 def debug(msg):
     if verbose : print(msg)
 
-def testUDP(server = '192.168.1.33', port = 10086,message = 'Hola caracola'):
-    global paquetes, errores
+def sendDict(diccio,server,port):
     socket.setdefaulttimeout(1) # https://medium.com/pipedrive-engineering/socket-timeout-an-important-but-not-simple-issue-with-python-4bb3c58386b4
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     server_address = (server, port)
     
     debug(f'Trying to connecto to {server} @ {port}')
     resultado = True
+    message = str(diccio)
     try:
         debug(f'sending "{message}"')
         sent = sock.sendto(message.encode(), server_address)
         paquetes += 1
         debug('waiting to receive')
-        data, server = sock.recvfrom(4096)
+        data, server = sock.recvfrom(100)
         strData=data.decode('UTF-8')
         debug(f'received "{strData}"')
-        if strData != message : 
+        if strData != 'OK' : 
             errores += 1
             print('Error de comunicaciones')
             resultado =  False
@@ -43,8 +45,21 @@ def testUDP(server = '192.168.1.33', port = 10086,message = 'Hola caracola'):
         sock.close()
     return resultado
 
-def intesiveTest(N=1000,server = '192.168.1.33', port = 10086,message = 'Hola caracola'):
-    for i in range(N):
-        resultado = testUDP(server=server, port=port, message = f'hola caracola {i}')
-        if (not verbose and i % 500 == 0) or not resultado: print(f'Paquetes: {paquetes} Errores: {errores}',end ='\r')
-    print(f'Paquetes: {paquetes} Errores: {errores} {errores*100.0/paquetes}%')
+def sendData(server = '192.168.1.33', port = 10086):
+    data = {}
+    temp,hum = test_DTH22.getData()
+    x,y,z,heading_gr,heading_min = hmc5883l.read_compas()
+    data['temp'] = temp
+    data['hum'] = hum
+    timestamp = MyDateTime.getLocalTimeHumanFormat()    
+    data['time'] = timestamp
+    data['temp'] = MY_ID
+    data['heading'] = heading_gr
+    sendDict(data,server,port)
+
+def test_forever(espera=5):
+    while True:
+         sendData()
+         time.sleep(espera)
+
+    

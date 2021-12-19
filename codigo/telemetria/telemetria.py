@@ -11,7 +11,7 @@ import test_rele
 test_rele.Verbose = False
 
 
-v = '0.6.4'
+v = '0.6.6'
 
 MY_ID = config.BOARD
 
@@ -74,7 +74,7 @@ def sendDict(diccio,server,port):
     return resultado
 
 def sendData(server = config.telemetry_server, port = config.telemetry_port):
-    global paquetes
+    global paquetes, errores
     data = {}
     temp,hum = test_DHT22.getData()
     x,y,z,heading_gr,heading_min = test_hmc5883l.read_compas()
@@ -85,7 +85,9 @@ def sendData(server = config.telemetry_server, port = config.telemetry_port):
     data['time'] = timestamp
     data['board'] = MY_ID
     data['heading'] = heading_gr
-    data[f'rele{config.pinRele}'] = f"{'On' if test_rele.rele.value()>0 else 'Off'}" 
+    data[f'rele{config.pinRele}'] = f"{'On' if test_rele.rele.value()>0 else 'Off'}"
+    data['count'] = paquetes
+    data['errors'] = errores
     sendDict(data,server,port)
 
 def test_forever(espera=5):

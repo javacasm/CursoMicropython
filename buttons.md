@@ -33,6 +33,9 @@ Pin.IN, Pin.OUT ¿pullup? ¿Pulldown? ¿activar/descativar pullup?
 
 IRQ_FALLING o IRQ_RISING
 
-button_left.irq(trigger = machine.Pin.IRQ_FALLING, handler = button_irq, 
+button_left.irq(trigger = machine.Pin.IRQ_FALLING, handler = button_irq, , machine.Pin.PULL_UP)
+Puede ser PULL_UP o None
 
+
+https://docs.micropython.org/en/latest/esp8266/tutorial/pins.html?highlight=interrupt
 

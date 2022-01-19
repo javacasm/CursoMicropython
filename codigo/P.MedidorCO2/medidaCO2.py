@@ -7,7 +7,7 @@ import network
 
 from umqttsimple import MQTTClient, MQTTException
 
-v = '0.6.2'
+v = '0.6.5'
 
 # Inicializacion de componentes
 i2c = machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21))
@@ -26,9 +26,9 @@ dht22 = dht.DHT22(machine.Pin(14))
 
 topic_user = b'javacasm'
 topic_sub = topic_user + b'/feeds'
-topic_subTemp = topic_sub + b'/Temp_CO2'
-topic_subHum = topic_sub + b'/Hum_CO2'
-topic_subCO2 = topic_sub + b'/CO2_CO2'
+topic_subTemp = topic_sub + b'/Temp_CO2py'
+topic_subHum = topic_sub + b'/Hum_CO2py'
+topic_subCO2 = topic_sub + b'/CO2_CO2py'
 
 def sub_CheckTopics(topic, msg):
     print((topic, msg))
@@ -71,8 +71,9 @@ def initWifi(ssid,passwd):
             
     msg = f'{w.ifconfig()}'
     return msg
-
-def test_forever(mqtt_client):
+mqtt_client = None
+def test_forever(delay = 10):
+    global mqtt_client
     while True:
         try:
             
@@ -112,5 +113,5 @@ def test_forever(mqtt_client):
             print(e)
             time.sleep(2)
             
-        time.sleep(2)
+        time.sleep(delay)
 

@@ -1,9 +1,11 @@
 # trabajando con varios leds
 import machine
 
-v = 0.1 
+v = 0.2
 
-pin_leds = (26, 25, 17, 16, 27, 14, 12, 13)
+# pin_leds = (26, 25, 17, 16, 27, 14, 12, 13) # ESP32 DEV Kit
+pin_leds = (0, 16, 12, 13, 15, 14, 2, 4) # ESPCAM CUIDADO CON EL GPIO 0
+
 leds = []
 
 def inicializar():
@@ -13,9 +15,9 @@ def inicializar():
        leds.append(led)
 
 def encenderTodos():
-    for led in range(0,7+1):
+    for led in range(len(leds))):
         leds[led].on() 
 
 def apagarTodos():
-    for led in range(0,7+1):
+    for led in range(len(leds)):
         leds[led].off()    

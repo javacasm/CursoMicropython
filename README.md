@@ -3,7 +3,7 @@
 ![Licencia CC](./images/Licencia_cc_peque.png)
 
 Licencia CC by SA @javacasm
-Marzo 2021
+Enero 2022
 
 A día de hoy existen un amplia variedad de sistemas embebidos programables en Python, un lenguaje mucho más sencillo de usar que el tradicional C++ en el que se suelen usar estos sistemas.
 
@@ -17,41 +17,40 @@ A lo largo de este curso aprenderemos a programar aplicaciones en plataformas co
 # Contenido
 
 
-## 0. Introducción a micropython
+## 1. Introducción a micropython
 * Historia de micropython
 * Versiones y variedades
 * Placas y sistemas que lo soportan
-
-## 1. Placas y sistemas programables con micropython
-* micro:bit
-* m5Stack
-* ESP32
-* Raspberry Pico
-* Instalación de firmware en equipos
+    * ESP32
+    * micro:bit
+    * m5Stack
+    * Raspberry Pico
 
 ## 2. Entornos de programación de sistemas embebidos
 * Thonny
-* Visual Studio Code
-* Mu-Code
+* Otros entornos:
+    * Visual Studio Code
+    * Mu-Code
+* Instalación de firmware en equipos    
 * Conexión remota y primeras pruebas
 * Hello python
 
 ## 3. Uso de entrada salida
-* Listas y rangos en python
 * Control de leds
 * Ejemplo: Hello Led
+* Listas y rangos en python
+* Uso de funciones en Python
+* Sentencias de repetición: bucles
 * Ejemplo: Control de relés
 * Entradas digitales
 * Ejemplo: uso de botones
 * Sentencias condicionales en python
 * Control de PWM
 * Ejemplo: control de motores
-* Uso de funciones en Python
-* Sentencias de repetición: bucles
 * LEDs RGB
 * Ejemplo: Hello Colors
 
-## 4. ADC
+## 4. ADC y DAC
 * Tipos y formatos en python
 * Lectura de valores analógicos
 * Uso de clases en python
@@ -61,7 +60,7 @@ A lo largo de este curso aprenderemos a programar aplicaciones en plataformas co
 ## 5. Módulos y librerías
 * Módulos en python
 * Control de tiras de leds RGBs
-* Sensores atmoféricos
+* Sensores atmosféricos
 * Ejemplo: estación meteorológica
 * Manejo de ficheros entrada y salida
 * Uso de tarjeta SD
@@ -84,12 +83,12 @@ A lo largo de este curso aprenderemos a programar aplicaciones en plataformas co
 
 ## 8. Display gráficos
 * Gráficos en python
-* Uso de pantallas TFT
-* Gráficos en pantallas
+* Uso de pantallas OLED y TFT
 * Interface gráficos
 * Ejemplo: consola de control
 
 ## 9. Creación de modulos python
-* Conexión con librerías C++
+* Conexión con librerías y módulos
 * Creación de módulos python
+* Compilación de firmware micropython
 

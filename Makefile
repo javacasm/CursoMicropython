@@ -28,8 +28,8 @@ all:  1 2 3 4 5 6 7 8 9
 		1.0.Micropython.md \
 		1.1.Como_funciona.md \
 		1.2.0.Hardware.md \
-		1.2.1.PyBoard \
-		1.2.2.ESP32-DevKit \
+		1.2.1.PyBoard.md \
+		1.2.2.ESP32-DevKit.md \
 		1.2.3.ESP01.md \
 		1.2.4.ESPCAM.md \
 		1.2.5.WemosD1R32.md \
@@ -54,14 +54,17 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		-o  $(S1)  \
+		-o  $(S2)  \
 		Cabecera.md        \
-		Cabecera_latex.md \2.0.Entornos_e_Instalacion.md \
+		Cabecera_latex.md \
+		2.0.Entornos_e_Instalacion.md \
 		2.1.Entornos.md \
 		2.2.Thonny.md \
 		2.3.OtrosEntornos.md \
-		2.4.install_firmware.md \
+		2.4.0.install_firmware.md \
 		2.4.1.led_builtin.md \
 		2.5.Install_consola_esp8266.md \
 		2.5.Install_consola.md \
 		2.6.Instalacion_raspiPico.md
+
+

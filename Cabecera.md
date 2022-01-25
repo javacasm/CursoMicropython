@@ -1,12 +1,10 @@
-# Aprende a programar Python 
+# Micropython: Python para programar microcontroladores y sistemas embebidos
 
 ![Logo Micropython](./images/MicroPython_new_logo.jpg)
 
 ![](./images/Micropython-logo.svg.png)
 
 ## Versión 0.99
-
-
 
 ![Licencia CC by SA](./images/Licencia_cc_peque.png) 
 

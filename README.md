@@ -26,7 +26,7 @@ A lo largo de este curso aprenderemos a programar aplicaciones en plataformas co
     * m5Stack
     * Raspberry Pico
 
-## 2. Entornos de programación de sistemas embebidos
+## 2. Entornos de programación y primeras pruebas
 * Thonny
 * Otros entornos:
     * Visual Studio Code
@@ -81,13 +81,13 @@ A lo largo de este curso aprenderemos a programar aplicaciones en plataformas co
 * Conexión con broker MQTT
 * Ejemplo: control remoto de caldera por MQTT
 
-## 8. Display gráficos
+## 8. Pantallas gráficas
 * Gráficos en python
 * Uso de pantallas OLED y TFT
 * Interface gráficos
 * Ejemplo: consola de control
 
-## 9. Creación de modulos python
+## 9. Creación de modulos micropython
 * Conexión con librerías y módulos
 * Creación de módulos python
 * Compilación de firmware micropython

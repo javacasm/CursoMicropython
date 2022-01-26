@@ -30,25 +30,27 @@ all:  1 2 3 4 5 6 7 8 9
 		1.2.0.Hardware.md \
 		1.2.1.PyBoard.md \
 		1.2.2.ESP32-DevKit.md \
-		1.2.3.ESP01.md \
-		1.2.4.ESPCAM.md \
-		1.2.5.WemosD1R32.md \
-		1.2.6.0.M5Stack.md \
-		1.2.6.1.M5StackCore.md \
-		1.2.6.2.m5stackCore2.md \
-		1.2.6.3.m5StickC.md \
+		1.2.3.WemosD1R32.md \
+		1.2.4.TTGO_TFT.md \
+		1.2.5.ESPCAM.md \
+		1.2.6.TTGO_OLED.md \
+		1.2.7.Wemos_Battery.md \
 		1.2.7.WemosD1.md \
+		1.2.8.LOLIN32.md \
 		1.2.8.NodeMCU.md \
-		1.2.11.TTGO_OLED.md \
-		1.2.12.Wemos_Battery.md \
-		1.2.13.LOLIN32.md \
-		1.2.14.TTGO_TFT.md \
-		1.2.15.TTGO_Lora.md \
-		1.3.Sonoff.md \
+		1.2.9.ESP01.md \
+		1.2.9.TTGO_Lora.md \
+		1.3.0.M5Stack.md \
+		1.3.1.M5StackCore.md \
+		1.3.2.m5stackCore2_adv.md \
+		1.3.3.m5StickC.md \
 		1.4.Lego_EV3.md \
 		1.5.RaspiPico.md \
-		1.7.VersionesMicropython.md \
+		1.6.microbit.md \
+		1.7.Sonoff.md \
+		1.8.VersionesMicropython.md \
 		1.9.Simulador.md
+	
 
 2:
 	pandoc --pdf-engine=xelatex   \
@@ -66,5 +68,6 @@ all:  1 2 3 4 5 6 7 8 9
 		2.5.Install_consola_esp8266.md \
 		2.5.Install_consola.md \
 		2.6.Instalacion_raspiPico.md
+
 
 

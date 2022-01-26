@@ -69,5 +69,116 @@ all:  1 2 3 4 5 6 7 8 9
 		2.5.Install_consola.md \
 		2.6.Instalacion_raspiPico.md
 
+3:
+	pandoc --pdf-engine=xelatex   \
+		-V papersize:a4paper    \
+		--template=./LaTeX_ES.latex    \
+		-o  $(S3)  \
+		Cabecera.md        \
+		Cabecera_latex.md \
+		3.10.servos.md \
+		3.11.controlMotores.md \
+		3.12.steppers.md \
+		3.13.Leds_RGB.md \
+		3.1.Hello_Led.md \
+		3.2.ficheros_main_boot.md \
+		3.3.Colecciones_leds.md \
+		3.4.Funciones.md \
+		3.5.Reles.md \
+		3.6.0.buttons.md \
+		3.6.1.Interrupciones.md \
+		3.7.0.condicionales.md \
+		3.8.touch.md \
+		3.9.PWM.md
 
+4:
+	pandoc --pdf-engine=xelatex   \
+		-V papersize:a4paper    \
+		--template=./LaTeX_ES.latex    \
+		-o  $(S4)  \
+		Cabecera.md        \
+		Cabecera_latex.md \
+		4.0.Medidas_analogicas.md \
+		4.1.Tipos_formatos.md \
+		4.2.ADC.md \
+		4.3.SensoresAnalogicos.md \
+		4.5.DAC.md \
+		4.6.MedidaBateria.md \
+		4.7.P.Alumbrado.md
 
+5:
+	pandoc --pdf-engine=xelatex   \
+		-V papersize:a4paper    \
+		--template=./LaTeX_ES.latex    \
+		-o  $(S5)  \
+		Cabecera.md        \
+		Cabecera_latex.md \
+		5.0.Modulos.md \
+		5.10.1.Neopixels.md \
+		5.10.2.Neopixel_pico.md \
+		5.1.Sensores_DHT.md \
+		5.2.Excepciones.md \
+		5.3.0.I2C.md \
+		5.3.1.lcd.md \
+		5.4.tiempo_hora.md \
+		5.5.Sensores_atmosfericos.md \
+		5.6.P.CO2_local.md \
+		5.7.ficheros.md \
+		5.8.TarjetaSD.md \
+		5.9.P.Datalogger.md
+
+6:
+	pandoc --pdf-engine=xelatex   \
+		-V papersize:a4paper    \
+		--template=./LaTeX_ES.latex    \
+		-o  $(S6)  \
+		Cabecera.md        \
+		Cabecera_latex.md \
+		6.0.Wifi.md \
+		6.1.webrepl.md \
+		6.2.ntp.md \
+		6.5.Bluetooth.md \
+		6.9.0.weberver.md \
+		6.9.1.web_request.md \
+		6.9.2.webserve_adv.md
+
+7:
+	pandoc --pdf-engine=xelatex   \
+		-V papersize:a4paper    \
+		--template=./LaTeX_ES.latex    \
+		-o  $(S7)  \
+		Cabecera.md        \
+		Cabecera_latex.md \
+		7.1.Blynk.md \
+		7.3.MQTT.md \
+		7.4.AdafruitIO.md \
+		7.5.P.CO2_IOT.md \
+		7.6.botTelegram.md
+
+8:
+	pandoc --pdf-engine=xelatex   \
+		-V papersize:a4paper    \
+		--template=./LaTeX_ES.latex    \
+		-o  $(S8)  \
+		Cabecera.md        \
+		Cabecera_latex.md \
+		8.2.oled.md \
+		8.3.display.md \
+		8.4.TFT.md \
+		8.5.Matriz_led.md
+
+9:
+	pandoc --pdf-engine=xelatex   \
+		-V papersize:a4paper    \
+		--template=./LaTeX_ES.latex    \
+		-o  $(S9)  \
+		Cabecera.md        \
+		Cabecera_latex.md \
+		9.1.Inside_micropython.md \
+		9.2.REPL.md \
+		9.3.1.mejorandoVelcidad.md \
+		9.3.2.Optimizaciones.md \
+		9.3.3.OptimizacionMemoria.md \
+		9.4.Precompilados.md \
+		9.5.CodigoNativo.md \
+		9.9.compilando-micropython.md

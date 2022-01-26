@@ -10,3 +10,5 @@ tPad12 = machine.TouchPad(machine.Pin(12))
 while True:
   print(tPad12.read())
   time.sleep(0.2)
+
+  

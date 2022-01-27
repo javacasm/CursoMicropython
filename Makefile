@@ -29,17 +29,21 @@ all:  1 2 3 4 5 6 7 8 9
 		1.1.Como_funciona.md \
 		1.2.0.Hardware.md \
 		1.2.1.PyBoard.md \
-		1.2.2.ESP32-DevKit.md \
-		1.2.3.WemosD1R32.md \
-		1.2.4.TTGO_TFT.md \
-		1.2.5.ESPCAM.md \
-		1.2.6.TTGO_OLED.md \
-		1.2.7.Wemos_Battery.md \
-		1.2.7.WemosD1.md \
-		1.2.8.LOLIN32.md \
-		1.2.8.NodeMCU.md \
-		1.2.9.ESP01.md \
-		1.2.9.TTGO_Lora.md \
+		1.2.0.Hardware.md \
+		1.2.1.PyBoard.md \
+		1.2.2.0.ESP32.md \
+		1.2.2.1.ESP32-DevKit.md \
+		1.2.2.2.WemosD1R32.md \
+		1.2.2.3.TTGO_TFT.md \
+		1.2.2.4.ESPCAM.md \
+		1.2.2.5..TTGO_OLED.md \
+		1.2.2.6..Wemos_Battery.md \
+		1.2.2.7.LOLIN32.md \
+		1.2.2.8.TTGO_Lora.md \
+		1.2.3.0.ESP8266.md \
+		1.2.3.1.WemosD1.md \
+		1.2.3.2.NodeMCU.md \
+		1.2.3.3.ESP01.md \
 		1.3.0.M5Stack.md \
 		1.3.1.M5StackCore.md \
 		1.3.2.m5stackCore2_adv.md \
@@ -182,3 +186,4 @@ all:  1 2 3 4 5 6 7 8 9
 		9.4.Precompilados.md \
 		9.5.CodigoNativo.md \
 		9.9.compilando-micropython.md
+

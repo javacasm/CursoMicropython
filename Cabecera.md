@@ -1,8 +1,6 @@
 # Micropython: Python para programar microcontroladores y sistemas embebidos
 
-![Logo Micropython](./images/MicroPython_new_logo.jpg)
-
-![](./images/Micropython-logo.svg.png)
+![](./images/Logo_uPython.png)
 
 ## Versión 0.99
 

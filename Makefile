@@ -29,8 +29,6 @@ all:  1 2 3 4 5 6 7 8 9
 		1.1.Como_funciona.md \
 		1.2.0.Hardware.md \
 		1.2.1.PyBoard.md \
-		1.2.0.Hardware.md \
-		1.2.1.PyBoard.md \
 		1.2.2.0.ESP32.md \
 		1.2.2.1.ESP32-DevKit.md \
 		1.2.2.2.WemosD1R32.md \
@@ -129,7 +127,10 @@ all:  1 2 3 4 5 6 7 8 9
 		5.6.P.CO2_local.md \
 		5.7.ficheros.md \
 		5.8.TarjetaSD.md \
-		5.9.P.Datalogger.md
+		5.9.P.Datalogger.md \
+		5.10.1.Neopixels.md \
+		5.10.2.Neopixel_pico.md \
+		5.11.Camara_ESP32CAM.md
 
 6:
 	pandoc --pdf-engine=xelatex   \

@@ -26,7 +26,6 @@ all:  1 2 3 4 5 6 7 8 9
 		0.0.intro.md \
 		0.1.Indice.md \
 		1.0.Micropython.md \
-		1.1.Como_funciona.md \
 		1.2.0.Hardware.md \
 		1.2.1.PyBoard.md \
 		1.2.2.0.ESP32.md \
@@ -34,23 +33,17 @@ all:  1 2 3 4 5 6 7 8 9
 		1.2.2.2.WemosD1R32.md \
 		1.2.2.3.TTGO_TFT.md \
 		1.2.2.4.ESPCAM.md \
-		1.2.2.5..TTGO_OLED.md \
-		1.2.2.6..Wemos_Battery.md \
-		1.2.2.7.LOLIN32.md \
-		1.2.2.8.TTGO_Lora.md \
 		1.2.3.0.ESP8266.md \
 		1.2.3.1.WemosD1.md \
 		1.2.3.2.NodeMCU.md \
-		1.2.3.3.ESP01.md \
+		1.2.3.5.ESP01.md \
 		1.3.0.M5Stack.md \
 		1.3.1.M5StackCore.md \
-		1.3.2.m5stackCore2_adv.md \
 		1.3.3.m5StickC.md \
 		1.4.Lego_EV3.md \
 		1.5.RaspiPico.md \
 		1.6.microbit.md \
 		1.7.Sonoff.md \
-		1.8.VersionesMicropython.md \
 		1.9.Simulador.md
 	
 

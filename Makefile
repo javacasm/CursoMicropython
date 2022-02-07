@@ -1,8 +1,8 @@
 DIR_PUBLICACION="./publicacion"
 
 
-S1  = "Tema 1 Introducción a micropython.docx"
-S2  = "Tema 2 Entornos de programación y primeras pruebas.docx"
+S1  = "Tema 1 Introducción a micropython y placas compatibles.docx"
+S2  = "Tema 2 Entornos de programación, instalación del firmware de micropython y primeras pruebas.docx"
 S3  = "Tema 3 Uso de entrada salida.docx"
 S4  = "Tema 4 Medidas analógicas: ADC.docx"
 S5  = "Tema 5 Módulos y librerías.docx"

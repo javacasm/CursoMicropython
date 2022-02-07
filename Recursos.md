@@ -81,8 +81,16 @@ Puedes usar el [módulo de Fritzing de la Raspi Pico](https://datasheets.raspber
 Más [detalles en la página de hackter.io](https://www.hackster.io/news/hands-on-with-the-rp2040-and-pico-the-first-in-house-silicon-and-microcontroller-from-raspberry-pi-effc452fc25d).
 
 
+#### Instalación firmware en ESP32-CAM
+
+[Tutorial de instalación](https://lemariva.com/blog/2022/01/micropython-upgraded-support-cameras-m5camera-esp32-cam-etc)
 
 
+### micropython y micro:bit
+
+https://microbit-micropython.readthedocs.io/en/latest/index.html
+
+https://tech.microbit.org/software/micropython/
 
 ### Documentación y recursos
 

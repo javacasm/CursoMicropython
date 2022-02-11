@@ -72,10 +72,6 @@ all:  1 2 3 4 5 6 7 8 9
 		-o  $(S3)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
-		3.10.servos.md \
-		3.11.controlMotores.md \
-		3.12.steppers.md \
-		3.13.Leds_RGB.md \
 		3.1.Hello_Led.md \
 		3.2.ficheros_main_boot.md \
 		3.3.Colecciones_leds.md \
@@ -85,7 +81,11 @@ all:  1 2 3 4 5 6 7 8 9
 		3.6.1.Interrupciones.md \
 		3.7.0.condicionales.md \
 		3.8.touch.md \
-		3.9.PWM.md
+		3.9.PWM.md \
+		3.10.servos.md \
+		3.11.controlMotores.md \
+		3.12.steppers.md \
+		3.13.Leds_RGB.md 		
 
 4:
 	pandoc --pdf-engine=xelatex   \

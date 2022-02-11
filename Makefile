@@ -72,10 +72,15 @@ all:  1 2 3 4 5 6 7 8 9
 		-o  $(S3)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
-		3.1.Hello_Led.md \
+		3.0.0.Entrada_salida.md \
+		3.0.1.Modulos_python.md \
+		3.1.0.Hello_Led.md \
+		3.1.1.Hello_led_pico.md \
+		3.1.4.bucles.md \
+		3.2.0.ficheros_codigo.md \
 		3.2.ficheros_main_boot.md \
-		3.3.Colecciones_leds.md \
-		3.4.Funciones.md \
+		3.3.Funciones.md \
+		3.4.Colecciones_leds.md \
 		3.5.Reles.md \
 		3.6.0.buttons.md \
 		3.6.1.Interrupciones.md \

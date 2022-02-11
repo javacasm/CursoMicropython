@@ -11,3 +11,5 @@ Tema|drive|youtube|imagen
 2.2.3 Reseteando nuestra placa con Ctrl+D|https://drive.google.com/file/d/1xa1M2I1YBvTQPHda-ZxlKq8ppkFAN7JB/view?usp=sharing|https://youtu.be/WuLIouCjEJ8|![](https://img.youtube.com/vi/WuLIouCjEJ8/0.jpg)
 2.2.4 Trabajando con variable y usando el histórico de comandos|https://drive.google.com/file/d/1HhW9zB-PT0gGMtGt_d3NPaJJhFLSrbq8/view?usp=sharing|https://youtu.be/T8nB3y1qaUk|![](https://img.youtube.com/vi/T8nB3y1qaUk/0.jpg)
 2.6 Instalación de micropython en una Rasperry Pico usando Thonny|https://drive.google.com/file/d/1jNFaPgo1HckDvHj6SmLgEPQWFh6xlxvm/view?usp=sharing|https://youtu.be/obd4fFh26Co|https://img.youtube.com/vi/obd4fFh26Co/0.jpg
+
+3.1.0 Controlando un led con micropython|https://drive.google.com/file/d/1ilOQgYBpthieuNtHMCdaJRuw3WpiQD0m/view?usp=sharing|https://youtu.be/yWNAUPYGEYM|![](https://img.youtube.com/vi/yWNAUPYGEYM/0.jpg)

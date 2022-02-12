@@ -76,10 +76,13 @@ all:  1 2 3 4 5 6 7 8 9
 		3.0.1.Modulos_python.md \
 		3.1.0.Hello_Led.md \
 		3.1.1.Hello_led_pico.md \
-		3.1.4.bucles.md \
 		3.2.0.ficheros_codigo.md \
-		3.2.ficheros_main_boot.md \
-		3.3.Funciones.md \
+		3.2.1.retardos.md \
+		3.2.2.bucles.md \
+		3.2.4.ficheros_main_boot.md \
+		3.3.0.Funciones.md \
+		3.3.1.Funciones_argumento.md \
+		3.3.2.Funciones_argumento_defecto.md \
 		3.4.Colecciones_leds.md \
 		3.5.Reles.md \
 		3.6.0.buttons.md \

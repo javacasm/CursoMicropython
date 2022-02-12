@@ -12,4 +12,10 @@ Tema|drive|youtube|imagen
 2.2.4 Trabajando con variable y usando el histórico de comandos|https://drive.google.com/file/d/1HhW9zB-PT0gGMtGt_d3NPaJJhFLSrbq8/view?usp=sharing|https://youtu.be/T8nB3y1qaUk|![](https://img.youtube.com/vi/T8nB3y1qaUk/0.jpg)
 2.6 Instalación de micropython en una Rasperry Pico usando Thonny|https://drive.google.com/file/d/1jNFaPgo1HckDvHj6SmLgEPQWFh6xlxvm/view?usp=sharing|https://youtu.be/obd4fFh26Co|https://img.youtube.com/vi/obd4fFh26Co/0.jpg
 3.1.0 Controlando un led con micropython|https://drive.google.com/file/d/1ilOQgYBpthieuNtHMCdaJRuw3WpiQD0m/view?usp=sharing|https://youtu.be/yWNAUPYGEYM|![](https://img.youtube.com/vi/yWNAUPYGEYM/0.jpg)
-3.2.x Código en ficheros, retardos y bucles |https://drive.google.com/file/d/1Y9YflawCGSA5x_geFnqu7utkpKzvgoKo/view?usp=sharing|https://youtu.be/VtJlZL4RD50|![Vídeo: Código en ficheros, retardos y bucles](https://img.youtube.com/vi/VtJlZL4RD50/0.jpg)
+3.2.x Código en ficheros, retardos y bucles |https://drive.google.com/file/d/1Y9YflawCGSA5x_geFnqu7utkpKzvgoKo/view?usp=sharing|https://youtu.be/VtJlZL4RD50|![](https://img.youtube.com/vi/VtJlZL4RD50/0.jpg)
+3.2.3. Haciendo que parpadee un led externo|https://drive.google.com/file/d/10ZJyflnQROowDhB3bbCjvBDCdjPPDw_v/view?usp=sharing|https://youtu.be/JlYe15iXzys|![]((https://img.youtube.com/vi/JlYe15iXzys/0.jpg)
+3.3.0 funciones en Micropython|https://drive.google.com/file/d/1gZzV6WPZ3y4BWnsdsdfxEDZzA0ZieE9y/view?usp=sharing|https://youtu.be/EFNGsPkxTnI|![](https://img.youtube.com/vi/EFNGsPkxTnI/0.jpg)
+3.3.1. Funciones con argumentos en micropython| |https://youtu.be/s4ml7qAMrX0)|![](https://img.youtube.com/vi/s4ml7qAMrX0/0.jpg)
+3.3.2. Funciones con valores por defecto en argumentos|https://drive.google.com/file/d/1dpAorNbiBCZIrcyq_lpbgHfPtp19MLlM/view?usp=sharing|https://youtu.be/fjk6Z1VXD9s|![](https://img.youtube.com/vi/fjk6Z1VXD9s/0.jpg)
+3.4 Trabajando con varios leds: colecciones en micropython|https://drive.google.com/file/d/1iE-8xN3bXm7k7JrYEHPMoP-7VKyWkRne/view?usp=sharing|https://youtu.be/p4C39bT0rLc|![](https://img.youtube.com/vi/p4C39bT0rLc/0.jpg)
+

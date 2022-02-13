@@ -92,6 +92,13 @@ https://microbit-micropython.readthedocs.io/en/latest/index.html
 
 https://tech.microbit.org/software/micropython/
 
+
+### PWM
+
+
+[librería pwm](https://www.esploradores.com/micropython_pwm/)
+
+
 ### Documentación y recursos
 
 

@@ -90,6 +90,7 @@ all:  1 2 3 4 5 6 7 8 9
 		3.6.5.Interrupciones.md \
 		3.7.0.condicionales.md \
 		3.9.PWM.md \
+		3.9.1.Efectos_PWM.md \
 		3.10.servos.md \
 		3.11.controlMotores.md \
 		3.13.Leds_RGB.md 		

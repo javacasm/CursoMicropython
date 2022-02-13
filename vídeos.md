@@ -18,4 +18,11 @@ Tema|drive|youtube|imagen
 3.3.1. Funciones con argumentos en micropython| |https://youtu.be/s4ml7qAMrX0)|![](https://img.youtube.com/vi/s4ml7qAMrX0/0.jpg)
 3.3.2. Funciones con valores por defecto en argumentos|https://drive.google.com/file/d/1dpAorNbiBCZIrcyq_lpbgHfPtp19MLlM/view?usp=sharing|https://youtu.be/fjk6Z1VXD9s|![](https://img.youtube.com/vi/fjk6Z1VXD9s/0.jpg)
 3.4 Trabajando con varios leds: colecciones en micropython|https://drive.google.com/file/d/1iE-8xN3bXm7k7JrYEHPMoP-7VKyWkRne/view?usp=sharing|https://youtu.be/p4C39bT0rLc|![](https://img.youtube.com/vi/p4C39bT0rLc/0.jpg)
+3.9.0 Controlando la intensidad del brillo de un led con PWM en micropython|https://drive.google.com/file/d/1eHhottDblgwZi3hrfRxSA47_Qs2WW3ZR/view?usp=sharing|https://youtu.be/wmpXpMSffZ0|![](https://img.youtube.com/vi/wmpXpMSffZ0/0.jpg)
+3.9.1 Creando efectos con led y  PWM en micropython|https://drive.google.com/file/d/1qoYHolqOxGkAnAhK1oGlvARQG0a055dJ/view?usp=sharing|https://youtu.be/_s7DdgWlI3c|![](https://img.youtube.com/vi/_s7DdgWlI3c/0.jpg)
+3.9.2 Efectos de PWM con leds en micropython|https://drive.google.com/file/d/1Fp5fmf8Fg9e5gt16gUCjjre7QLcoxjUY/view?usp=sharing|https://youtu.be/SxqxZsGfkCo|![](https://img.youtube.com/vi/SxqxZsGfkCo/0.jpg)
+
+
+
+
 

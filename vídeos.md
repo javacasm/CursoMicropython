@@ -21,8 +21,6 @@ Tema|drive|youtube|imagen
 3.9.0 Controlando la intensidad del brillo de un led con PWM en micropython|https://drive.google.com/file/d/1eHhottDblgwZi3hrfRxSA47_Qs2WW3ZR/view?usp=sharing|https://youtu.be/wmpXpMSffZ0|![](https://img.youtube.com/vi/wmpXpMSffZ0/0.jpg)
 3.9.1 Creando efectos con led y  PWM en micropython|https://drive.google.com/file/d/1qoYHolqOxGkAnAhK1oGlvARQG0a055dJ/view?usp=sharing|https://youtu.be/_s7DdgWlI3c|![](https://img.youtube.com/vi/_s7DdgWlI3c/0.jpg)
 3.9.2 Efectos de PWM con leds en micropython|https://drive.google.com/file/d/1Fp5fmf8Fg9e5gt16gUCjjre7QLcoxjUY/view?usp=sharing|https://youtu.be/SxqxZsGfkCo|![](https://img.youtube.com/vi/SxqxZsGfkCo/0.jpg)
-
-
-
-
-
+3.13 Controlando el color de un led RGB con 3 canales PWM desde Micropython|https://drive.google.com/file/d/1BQy42owR09vGFqwpfse2RmkrMFTPZh4Y/view?usp=sharing|https://youtu.be/xeWRiRDRcIo|![](https://img.youtube.com/vi/xeWRiRDRcIo/0.jpg)
+4.2.1 Controlando el brillo de un led con un potenciometro desde micropython|https://drive.google.com/file/d/1FThVBYL8lbukJY-_nbOo2f16-vFW-zEL/view?usp=sharing|https://youtu.be/2W60ob8Xrww|![](https://img.youtube.com/vi/2W60ob8Xrww/0.jpg)
+4.5 Generando sonidos con el DAC desde micropython|https://drive.google.com/file/d/1Ll_HCY23Mz9kjA7v62dFwHFGNgsLG5m7/view?usp=sharing|https://youtu.be/SSsVXn14PVU|![](https://img.youtube.com/vi/SSsVXn14PVU/0.jpg)

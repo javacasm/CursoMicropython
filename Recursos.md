@@ -99,6 +99,13 @@ https://tech.microbit.org/software/micropython/
 [librería pwm](https://www.esploradores.com/micropython_pwm/)
 
 
+### DAC
+
+http://kio4.com/arduino/226_Wemos_DAC.htm
+https://www.hackster.io/CesarSound/echotrek-digital-delay-echo-audio-effects-with-arduino-b017a2
+https://www.youtube.com/watch?v=_FS4vwSLs64
+
+
 ### Documentación y recursos
 
 

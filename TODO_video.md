@@ -10,3 +10,6 @@ Revisar fichero 3.2.x:
 
 3.6 botones
 
+3.9 led rgb
+
+4.3 controlado el color de un led rgb con 3 potenciómetros

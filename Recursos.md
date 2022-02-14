@@ -106,6 +106,16 @@ https://www.hackster.io/CesarSound/echotrek-digital-delay-echo-audio-effects-wit
 https://www.youtube.com/watch?v=_FS4vwSLs64
 
 
+https://hackaday.io/project/176774-simple-esp32-sd-audio-player-internal-dac-pdm
+
+[Ejemplo para m5Stack](https://m5stack.hackster.io/lukasmaximus89/play-wav-files-on-your-m5stack-3bee7e)
+
+[Ejemplo para pyBoard](https://docs.micropython.org/en/latest/pyboard/tutorial/amp_skin.html)
+
+## ADC
+
+[Librería ADC](https://www.esploradores.com/micropython_adc/)
+
 ### Documentación y recursos
 
 

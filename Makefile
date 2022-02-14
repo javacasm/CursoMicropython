@@ -4,7 +4,7 @@ DIR_PUBLICACION="./publicacion"
 S1  = "Tema 1 Introducción a micropython y placas compatibles.docx"
 S2  = "Tema 2 Entornos de programación, instalación del firmware de micropython y primeras pruebas.docx"
 S3  = "Tema 3 Uso de entradas  y salidas digitales.docx"
-S4  = "Tema 4 Medidas analógicas: ADC.docx"
+S4  = "Tema 4 Trabajando con señales analógicas: ADC y DAC.docx"
 S5  = "Tema 5 Módulos y librerías.docx"
 S6  = "Tema 6 Conexion a redes.docx"
 S7  = "Tema 7 IoT y MQTT.docx"
@@ -103,13 +103,16 @@ all:  1 2 3 4 5 6 7 8 9
 		-o  $(S4)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
-		4.0.Medidas_analogicas.md \
+		4.0.Señales_analogicas.md \
 		4.1.Tipos_formatos.md \
-		4.2.ADC.md \
-		4.3.SensoresAnalogicos.md \
+		4.2.0.ADC.md \
+		4.2.1.ADC_esp32.md \
+		4.3.0.SensoresAnalogicos.md \
+		4.3.2.Controlando_brillo_led.md \
+		4.4.0.Concionales_2.md \
 		4.5.DAC.md \
 		4.6.MedidaBateria.md \
-		4.7.P.Alumbrado.md
+		4.7.proyectos.md
 
 5:
 	pandoc --pdf-engine=xelatex   \

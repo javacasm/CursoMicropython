@@ -43,7 +43,7 @@ all:  1 2 3 4 5 6 7 8 9
 		1.4.Lego_EV3.md \
 		1.5.RaspiPico.md \
 		1.6.microbit.md \
-		1.7.Sonoff.md \
+		1.7.0.Sonoff.md \
 		1.9.Simulador.md
 	
 

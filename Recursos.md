@@ -126,7 +126,10 @@ https://microtutorialesdc.com/course/programing/micropython
 
 https://github.com/mytechnotalent/MicroPython-For-micro-bit
 
+### I2C
 
+
+[Listado de direcciones por fabricantes](https://learn.adafruit.com/i2c-addresses/the-list)
 
 # Referencias
 

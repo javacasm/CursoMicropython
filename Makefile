@@ -131,7 +131,8 @@ all:  1 2 3 4 5 6 7 8 9
 		5.7.ficheros.md \
 		5.8.TarjetaSD.md \
 		5.9.P.Datalogger.md \
-		5.10.1.Neopixels.md
+		5.10.1.Neopixels.md \
+		5.14.modulos_ESP32.md
 
 6:
 	pandoc --pdf-engine=xelatex   \

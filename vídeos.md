@@ -29,3 +29,6 @@ Tema|drive|youtube|imagen
 
 5.5.8 Medida de temperatura, humedad con DHT22 y eCO2 con css811 usando micropython|https://drive.google.com/file/d/1eiEnc9TiJ3R8kxZuA6mAZbDNZJuiquXV/view?usp=sharing|https://youtu.be/7w0aTTJba9I|![](https://img.youtube.com/vi/7w0aTTJba9I/0.jpg)
 5.3.1 Medida de temperatura, humedad con DHT22 y eCO2 con lcd I2C usando micropython|https://drive.google.com/file/d/14tIdReEZ-covfRcG3ewyVr0DP7M9M26q/view?usp=sharing|https://youtu.be/zZJrINrWXQA|![](https://img.youtube.com/vi/zZJrINrWXQA/0.jpg)
+
+5.14  Cómo actualizar tu placa a microPython 1.18  ¡¡¡es casi 3 veces más rápido!!!|https://drive.google.com/file/d/1gyQoI_YAA-vlTadb9KyJjUKoqUquKq6T/view?usp=sharing|https://youtu.be/1eRhIlr7XDo|![](https://img.youtube.com/vi/1eRhIlr7XDo/0.jpg)
+

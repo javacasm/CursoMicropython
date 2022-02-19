@@ -59,7 +59,8 @@ all:  1 2 3 4 5 6 7 8 9
 		2.2.0.Thonny.md \
 		2.2.1.Thonny_install_firmware.md \
 		2.2.2.Thonny_uso.md \
-		2.3.OtrosEntornos.md \
+		2.3.variables.md \
+		2.4.OtrosEntornos.md \
 		2.5.0.Install_consola.md \
 		2.5.1.Instalacion_ESP32CAM.md \
 		2.6.Instalacion_raspiPico.md \
@@ -122,6 +123,7 @@ all:  1 2 3 4 5 6 7 8 9
 		Cabecera.md        \
 		Cabecera_latex.md \
 		5.0.0.Modulos.md \
+		5.0.1.modulos_os.md \
 		5.1.5.f-string.md \
 		5.1.Sensores_DHT.md \
 		5.2.Excepciones.md \

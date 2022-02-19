@@ -121,22 +121,17 @@ all:  1 2 3 4 5 6 7 8 9
 		-o  $(S5)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
-		5.0.Modulos.md \
-		5.10.1.Neopixels.md \
-		5.10.2.Neopixel_pico.md \
+		5.0.0.Modulos.md \
+		5.1.5.f-string.md \
 		5.1.Sensores_DHT.md \
 		5.2.Excepciones.md \
 		5.3.0.I2C.md \
 		5.3.1.lcd.md \
-		5.4.tiempo_hora.md \
-		5.5.Sensores_atmosfericos.md \
 		5.6.P.CO2_local.md \
 		5.7.ficheros.md \
 		5.8.TarjetaSD.md \
 		5.9.P.Datalogger.md \
-		5.10.1.Neopixels.md \
-		5.10.2.Neopixel_pico.md \
-		5.11.Camara_ESP32CAM.md
+		5.10.1.Neopixels.md
 
 6:
 	pandoc --pdf-engine=xelatex   \

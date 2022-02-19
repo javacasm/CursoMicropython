@@ -13,3 +13,10 @@ Revisar fichero 3.2.x:
 3.9 led rgb
 
 4.3 controlado el color de un led rgb con 3 potenciómetros
+
+Usar 
+
+5.8.3.plot_datos
+
+5.8.2._bucle y formato
+

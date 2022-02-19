@@ -27,3 +27,5 @@ Tema|drive|youtube|imagen
 5.1 Midiendo humedad y temperatura con un sensor DHT22 en micropython|https://drive.google.com/file/d/1vD_YS2aPuW1wdRUmI0XrEllX7eWjO0uw/view?usp=sharing|https://youtu.be/As10gfvxEdw|![](https://img.youtube.com/vi/As10gfvxEdw/0.jpg)
 5.2.0 Escaneando los dispositivos I2C conectados con micropython|https://drive.google.com/file/d/1oPnlk9ooau4wNHKiuuwoGGymZ9kr-kw8/view?usp=sharing|https://youtu.be/Ey0BQpFMaDs|![](https://img.youtube.com/vi/Ey0BQpFMaDs/0.jpg)
 
+5.5.8 Medida de temperatura, humedad con DHT22 y eCO2 con css811 usando micropython|https://drive.google.com/file/d/1eiEnc9TiJ3R8kxZuA6mAZbDNZJuiquXV/view?usp=sharing|https://youtu.be/7w0aTTJba9I|![](https://img.youtube.com/vi/7w0aTTJba9I/0.jpg)
+5.3.1 Medida de temperatura, humedad con DHT22 y eCO2 con lcd I2C usando micropython|https://drive.google.com/file/d/14tIdReEZ-covfRcG3ewyVr0DP7M9M26q/view?usp=sharing|https://youtu.be/zZJrINrWXQA|![](https://img.youtube.com/vi/zZJrINrWXQA/0.jpg)

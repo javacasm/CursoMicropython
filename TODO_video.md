@@ -1,5 +1,7 @@
 Simulador https://micropython.org/unicorn/
 
+Simulador Wokwi
+
 Comparación entre arduino y micropython
 
 Estructura del curso

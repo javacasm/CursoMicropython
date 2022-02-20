@@ -131,6 +131,16 @@ https://github.com/mytechnotalent/MicroPython-For-micro-bit
 
 [Listado de direcciones por fabricantes](https://learn.adafruit.com/i2c-addresses/the-list)
 
+### 2.11 instalación en m5stack
+
+
+
+https://lemariva.com/blog/2020/06/m5stamp-pico-m5stack-presents-today-esp32-miniature-and-powerful-module
+
+
+[firmware](https://github.com/m5stack/M5Stack_MicroPython)
+
+
 # Referencias
 
 ![Documentación oficial micropython](https://docs.micropython.org/en/latest/index.html)

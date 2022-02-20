@@ -6,3 +6,5 @@
 psRAM
 
 spiRAM?
+
+Consejos para calcular tama;os de ficheros y capacidades

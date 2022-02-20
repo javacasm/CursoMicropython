@@ -140,6 +140,12 @@ https://lemariva.com/blog/2020/06/m5stamp-pico-m5stack-presents-today-esp32-mini
 
 [firmware](https://github.com/m5stack/M5Stack_MicroPython)
 
+## NTP
+
+[Ejemplo para tener en cuenta timezone](https://forum.micropython.org/viewtopic.php?t=5145)
+
+https://www.profetolocka.com.ar/2020/12/16/micropython-reloj-sincronizado-por-internet/
+
 
 # Referencias
 

@@ -146,6 +146,27 @@ https://lemariva.com/blog/2020/06/m5stamp-pico-m5stack-presents-today-esp32-mini
 
 https://www.profetolocka.com.ar/2020/12/16/micropython-reloj-sincronizado-por-internet/
 
+## Bluetooth
+
+
+[Ejemplos oficiales de micropython](https://github.com/micropython/micropython/tree/master/examples/bluetooth)
+
+[Api Bluetooth en micropython](https://docs.micropython.org/en/latest/library/bluetooth.html)
+
+[Video tutotial](https://www.youtube.com/watch?v=ZR3vgToAHbY)
+
+[Video tutorial 2](https://www.youtube.com/watch?v=X30CJkK69so)
+
+[Ejemplo BLE](https://techtutorialsx.com/2018/12/10/esp32-arduino-serial-over-bluetooth-client-disconnection-event/)
+
+
+[Ejemplos 2](https://techtotinker.blogspot.com/2021/08/025-esp32-micropython-esp32-bluetooth.html)
+
+[Ejemplos 3](https://techtotinker.blogspot.com/2021/08/042-micropython-technotes-jdy-32.html    )
+
+[Gestión de bluetooth desde linux](https://atareao.es/ubuntu/gestionar-el-bluetooth-desde-la-terminal-en-linux/)
+
+[Detección de dispositivos sin vincular](https://www.youtube.com/watch?v=azT2rosEo0k)
 
 # Referencias
 

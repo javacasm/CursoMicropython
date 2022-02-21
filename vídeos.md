@@ -32,3 +32,6 @@ Tema|drive|youtube|imagen
 
 5.14  Cómo actualizar tu placa a microPython 1.18  ¡¡¡es casi 3 veces más rápido!!!|https://drive.google.com/file/d/1gyQoI_YAA-vlTadb9KyJjUKoqUquKq6T/view?usp=sharing|https://youtu.be/1eRhIlr7XDo|![](https://img.youtube.com/vi/1eRhIlr7XDo/0.jpg)
 
+6.0 Configuración de la conexión Wifi a una red existen con micropython|https://drive.google.com/file/d/1hgANRO5-cUGRYTPxzkmd3dPB9pipn4o6/view?usp=sharing|https://youtu.be/_A0kuE7yGuw|![](https://img.youtube.com/vi/_A0kuE7yGuw/0.jpg)
+
+6.1 Configuración y funcionamiento del acceso remoto con webREPL en micropython|https://drive.google.com/file/d/14PRBpt1AS_YXc0UHx2tcG2b4n0RDEHor/view?usp=sharing|https://youtu.be/7PugdHU9XeE|![](https://img.youtube.com/vi/7PugdHU9XeE/0.jpg)

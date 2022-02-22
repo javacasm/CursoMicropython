@@ -1,14 +1,17 @@
+# code from httpshttps://techtotinker.blogspot.com/2021/08/025-esp32-micropython-esp32-bluetooth.html based in  BLE_uart_peripheral 
+# Thanks George Bantique
+
 from machine import Pin
 from machine import Timer
 from time import sleep_ms
 import ubluetooth
 
-v = '0.1'
-
-pin_led = 19
+v = 0.2
 
 ble_msg = ""
 is_ble_connected = False
+
+pin_led = 19
 
 class ESP32_BLE():
     def __init__(self, name):
@@ -28,13 +31,13 @@ class ESP32_BLE():
 
     def connected(self):
         global is_ble_connected
-        is_ble_connected = True
+        is_ble_connected = True         
         self.led.value(1)
         self.timer1.deinit()
 
     def disconnected(self):
         global is_ble_connected
-        is_ble_connected = False
+        is_ble_connected = False        
         self.timer1.init(period=100, mode=Timer.PERIODIC, callback=lambda t: self.led.value(not self.led.value()))
 
     def ble_irq(self, event, data):
@@ -75,8 +78,9 @@ class ESP32_BLE():
         name = bytes(self.name, 'UTF-8')
         adv_data = bytearray('\x02\x01\x02') + bytearray((len(name) + 1, 0x09)) + name
         self.ble.gap_advertise(100, adv_data)
-        print(adv_data)
-        print("\r\n")
+        print(self.name)
+        # print(adv_data)
+        # print("\r\n")
                 # adv_data
                 # raw: 0x02010209094553503332424C45
                 # b'\x02\x01\x02\t\tESP32BLE'
@@ -89,9 +93,31 @@ class ESP32_BLE():
                 # https://docs.silabs.com/bluetooth/latest/general/adv-and-scanning/bluetooth-adv-data-basics
 
 
-ble = ESP32_BLE("ESP32BLE")
 
-while True:
+led = Pin(pin_led, Pin.OUT)
+but = Pin(0, Pin.IN)
+ble = ESP32_BLE('ESP32-bt')
+
+def buttons_irq(pin):
+    
+    led.value(not led.value())
+    msg = 'LED state will be toggled.'
     if is_ble_connected:
-        ble.send('Hello')
-    sleep_ms(1000)
+        ble.send(msg)
+    print(msg)
+    
+    
+but.irq(trigger=Pin.IRQ_FALLING, handler=buttons_irq)
+contador = 0
+while True:
+    if ble_msg == 'led status':
+        print(ble_msg)
+        ble_msg = ""
+        msg = 'LED is ON.' if led.value() else 'LED is OFF'
+        print(msg)
+        ble.send(msg)
+    if is_ble_connected:
+        ble.send(str(contador))
+        contador += 1
+    sleep_ms(500)
+

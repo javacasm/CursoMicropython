@@ -3,15 +3,20 @@ from machine import Timer
 from time import sleep_ms
 import ubluetooth
 
+v = 0.2
+
+pin_led = 19
+
 ble_msg = ""
 is_ble_connected = False
+
 
 class ESP32_BLE():
     def __init__(self, name):
         # Create internal objects for the onboard LED
         # blinking when no BLE device is connected
         # stable ON when connected
-        self.led = Pin(2, Pin.OUT)
+        self.led = Pin(pin_led, Pin.OUT)
         self.timer1 = Timer(0)
         
         self.name = name

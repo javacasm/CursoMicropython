@@ -26,12 +26,10 @@ Tema|drive|youtube|imagen
 4.5 Generando sonidos con el DAC desde micropython|https://drive.google.com/file/d/1Ll_HCY23Mz9kjA7v62dFwHFGNgsLG5m7/view?usp=sharing|https://youtu.be/SSsVXn14PVU|![](https://img.youtube.com/vi/SSsVXn14PVU/0.jpg)
 5.1 Midiendo humedad y temperatura con un sensor DHT22 en micropython|https://drive.google.com/file/d/1vD_YS2aPuW1wdRUmI0XrEllX7eWjO0uw/view?usp=sharing|https://youtu.be/As10gfvxEdw|![](https://img.youtube.com/vi/As10gfvxEdw/0.jpg)
 5.2.0 Escaneando los dispositivos I2C conectados con micropython|https://drive.google.com/file/d/1oPnlk9ooau4wNHKiuuwoGGymZ9kr-kw8/view?usp=sharing|https://youtu.be/Ey0BQpFMaDs|![](https://img.youtube.com/vi/Ey0BQpFMaDs/0.jpg)
-
 5.5.8 Medida de temperatura, humedad con DHT22 y eCO2 con css811 usando micropython|https://drive.google.com/file/d/1eiEnc9TiJ3R8kxZuA6mAZbDNZJuiquXV/view?usp=sharing|https://youtu.be/7w0aTTJba9I|![](https://img.youtube.com/vi/7w0aTTJba9I/0.jpg)
 5.3.1 Medida de temperatura, humedad con DHT22 y eCO2 con lcd I2C usando micropython|https://drive.google.com/file/d/14tIdReEZ-covfRcG3ewyVr0DP7M9M26q/view?usp=sharing|https://youtu.be/zZJrINrWXQA|![](https://img.youtube.com/vi/zZJrINrWXQA/0.jpg)
-
 5.14  Cómo actualizar tu placa a microPython 1.18  ¡¡¡es casi 3 veces más rápido!!!|https://drive.google.com/file/d/1gyQoI_YAA-vlTadb9KyJjUKoqUquKq6T/view?usp=sharing|https://youtu.be/1eRhIlr7XDo|![](https://img.youtube.com/vi/1eRhIlr7XDo/0.jpg)
-
 6.0 Configuración de la conexión Wifi a una red existen con micropython|https://drive.google.com/file/d/1hgANRO5-cUGRYTPxzkmd3dPB9pipn4o6/view?usp=sharing|https://youtu.be/_A0kuE7yGuw|![](https://img.youtube.com/vi/_A0kuE7yGuw/0.jpg)
-
 6.1 Configuración y funcionamiento del acceso remoto con webREPL en micropython|https://drive.google.com/file/d/14PRBpt1AS_YXc0UHx2tcG2b4n0RDEHor/view?usp=sharing|https://youtu.be/7PugdHU9XeE|![](https://img.youtube.com/vi/7PugdHU9XeE/0.jpg)
+6.5 Uso de comunicaciones Bluetooth con micropython en un ESP32|https://drive.google.com/file/d/1FtHBwX7PBUqPAk-7ZG6YbvNq1NJnh9dy/view?usp=sharing|https://youtu.be/BtfSm-5dxks|![](https://img.youtube.com/vi/BtfSm-5dxks/0.jpg)
+

@@ -146,11 +146,19 @@ all:  1 2 3 4 5 6 7 8 9
 		Cabecera_latex.md \
 		6.0.Wifi.md \
 		6.1.webrepl.md \
-		6.2.ntp.md \
-		6.5.Bluetooth.md \
-		6.9.0.weberver.md \
-		6.9.1.web_request.md \
-		6.9.2.webserve_adv.md
+		6.2.0.tiempo_hora.md \
+		6.2.1.ntp.md \
+		6.5.1.Datalogger_V2.md \
+		6.6.0.Bluetooth.md \
+		6.6.1.Bluetooth_ESP32.md \
+		6.7.0.sockets.md \
+		6.7.1.socket_mp.md \
+		6.7.2.web_request.md \
+		6.9.0.webserver.md \
+		6.9.1.weberver_ejemplo.md \
+		6.9.2.HTML.md \
+		6.9.3.web_meteo.md \
+		6.9.5.WebServer_control.md
 
 7:
 	pandoc --pdf-engine=xelatex   \

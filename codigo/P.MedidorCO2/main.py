@@ -22,11 +22,5 @@ def connnectMQTT(p):
     else:
         print('Connected yet')
         
-def pulsado(p):
-    print('Pulsado')
 
-# button = machine.Pin(23, machine.Pin.IN, machine.Pin.PULL_UP)
-
-# button.irq(trigger = machine.Pin.IRQ_FALLING, handler = connnectMQTT)
-
-medidaCO2.test_forever(delay = 3)
+medidaCO2.test_forever(delay = 30)

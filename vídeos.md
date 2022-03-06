@@ -32,4 +32,6 @@ Tema|drive|youtube|imagen
 6.0 Configuración de la conexión Wifi a una red existen con micropython|https://drive.google.com/file/d/1hgANRO5-cUGRYTPxzkmd3dPB9pipn4o6/view?usp=sharing|https://youtu.be/_A0kuE7yGuw|![](https://img.youtube.com/vi/_A0kuE7yGuw/0.jpg)
 6.1 Configuración y funcionamiento del acceso remoto con webREPL en micropython|https://drive.google.com/file/d/14PRBpt1AS_YXc0UHx2tcG2b4n0RDEHor/view?usp=sharing|https://youtu.be/7PugdHU9XeE|![](https://img.youtube.com/vi/7PugdHU9XeE/0.jpg)
 6.5 Uso de comunicaciones Bluetooth con micropython en un ESP32|https://drive.google.com/file/d/1FtHBwX7PBUqPAk-7ZG6YbvNq1NJnh9dy/view?usp=sharing|https://youtu.be/BtfSm-5dxks|![](https://img.youtube.com/vi/BtfSm-5dxks/0.jpg)
+7.5.0 Código para la publicación de datos de CO2|https://drive.google.com/file/d/1rO8fCMzYz1ZIzlEk_RJtw8lW0TNISUQv/view?usp=sharing|![](https://youtu.be/vtFmIaLIybA|https://img.youtube.com/vi/vtFmIaLIybA/0.jpg)
+7.5.1 Creación de Dashboard en Adafruit IO|https://drive.google.com/file/d/1mx5X50KpL-6XbNv1a-grUVj6l5_tbjAV/view?usp=sharing|https://youtu.be/AFSRhYy4dLY|![](https://img.youtube.com/vi/AFSRhYy4dLY/0.jpg)]()
 

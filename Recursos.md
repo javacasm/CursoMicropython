@@ -168,6 +168,66 @@ https://www.profetolocka.com.ar/2020/12/16/micropython-reloj-sincronizado-por-in
 
 [Detección de dispositivos sin vincular](https://www.youtube.com/watch?v=azT2rosEo0k)
 
+### IOT 
+
+[Informe IOT](http://mattturck.com/iot2018/)
+
+[Hazte un IOT](https://github.com/javacasm/IOT_Hazte)
+
+[Curso de IOT](https://www.spainlabs.com/foros/tema-SpainLabs-con-el-IoT-para-tod-s)
+
+[MQTT](https://www.spainlabs.com/foros/tema-SpainLabsIoT2018-Empezamos-Servidor-MQTT)
+
+### MQTT
+
+## Recursos
+
+[Instalación de mosquito en la Raspberry)[https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/]
+
+https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266
+
+https://geekytheory.com/tutorial-raspberry-pi-gpio-y-mqtt-parte-1
+
+
+### Adafruit IO
+
+
+
+
+[Tutorial arduinoBlocks](https://arduinoblocks.blogspot.com/2019/03/dashboard-mqtt-con-adafruit-io-y.html)
+
+
+
+[Librerías](https://io.adafruit.com/api/docs/mqtt.html#client-libraries)
+
+[Código Librería Arduino](https://github.com/adafruit/Adafruit_MQTT_Library)
+
+[Cuenta](https://accounts.adafruit.com/settings/profile)
+
+[Perfil](https://io.adafruit.com/javacasm/profile)
+
+
+
+
+
+CUIDADO CON PUBLICAR LA CLAVE ..... 
+
+Subscripción a los errors y a throttle
+
+[errores](https://io.adafruit.com/blog/example/2016/07/06/mqtt-error-reporting/)
+
+[Códigos de error del protocolo MQTT](https://www.vtscada.com/help/Content/D_Tags/D_MQTT_ErrMsg.htm)
+
+4 - Error en el login
+5 - Error de autorización ¿hemos enviado más datos o más rápido de la cuenta? ¿es válido mi key/token?
+
+[qué es](https://learn.adafruit.com/welcome-to-adafruit-io/what-is-adafruit-io)
+
+
+[Api](https://io.adafruit.com/api/docs/mqtt.html?python#adafruit-io-mqtt-api)
+
+[Feed](https://io.adafruit.com/javacasm/feeds/dht22-2-temp)
+
 # Referencias
 
 ![Documentación oficial micropython](https://docs.micropython.org/en/latest/index.html)

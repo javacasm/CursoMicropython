@@ -164,14 +164,18 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla.docx \
 		-o  $(S7)  \
-		Cabecera.md        \
+		Cabecera.md \
 		Cabecera_latex.md \
-		7.1.Blynk.md \
-		7.3.MQTT.md \
-		7.4.AdafruitIO.md \
-		7.5.P.CO2_IOT.md \
-		7.6.botTelegram.md
+		7.0.IOT.md \
+		7.1.0.PlataformasIOT.md \
+		7.1.1.ThingSpeak.md \
+		7.3.0.MQTT.md \
+		7.3.1.MQTT_ejemplo.md \
+		7.3.3.AdafruitIO.md \
+		7.4.ControlRemoto_mqtt.md \
+		7.5.P.CO2_IOT.md 
 
 8:
 	pandoc --pdf-engine=xelatex   \
@@ -200,4 +204,5 @@ all:  1 2 3 4 5 6 7 8 9
 		9.4.Precompilados.md \
 		9.5.CodigoNativo.md \
 		9.9.compilando-micropython.md
+
 

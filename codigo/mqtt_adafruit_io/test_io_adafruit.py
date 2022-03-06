@@ -1,124 +1,5 @@
-## Publicación de contenidos en Adafruit IO
-
-Vamos a adaptar ahora el ejemplo anterior para conectarnos a Adafruit IO, publicando valores con MQTT.  
-Para ello lo primero será darnos de alta en la plataforma. Con la versión gratuita podremos trabajar bastante bien, pero con límites en cuanto a la velocidad de envío de datos y al histórico de estos que se guarda.
-
-![](./images/adafruitIO_feedsLimits.png)
-
-Pasados estos límites, o si no usamos adecuadamente la autorización veremos errores en la página de nuestro feed
-
-![](./images/adafruitIO_LimitExceed.png)
-![](./images/adafruitIO_feedError.png)
-
-Vamos a ver algunos cambios que tenemos que hacer a nuestro código:
-
-* Los topics (adafruit los llama feeds) tienen el formato **usuario/feeds/topic**
-* Adafruit usa autentificación, por lo que en método **connect** tendremos que darle valores a los parámetros **user** que será nuestro nombre de usuario en adafruit.io y como password, el 
-
-Esta es la configuración de la conexión:
-
-Host	io.adafruit.com
-Secure (SSL) Port	8883
-Insecure Port	1883
-MQTT over Websocket	443
-Username	Your Adafruit IO Username
-Password	Your Adafruit IO Key
-
-### Ejemplo micropython
-
-Vamos a adaptar el ejemplo anterior para adafuit IO. Como cada vez necesitamos más datos de configuración vamos a crear un fichero **config.py** donde pondremos todos los datos de configuración:
-
-```python
-# Fichero de configuracion
-
-v = '0.5'
-
-DEEP_SLEEP = True
-
-mqtt_server = 'io.adafruit.com'
-mqtt_port =  1883
-mqtt_user = 'usario'
-mqtt_password = 'AIO_KEYADAFUITIO'
-
-BOARD = 'ESP32 - keyestudio'
-
-SSID = 'MIWIFI'
-WIFI_PASSWD = 'MI_CLAVE_WIFI'
-
-print(f'Using config for board: {BOARD}')
-```
-
-[Código config.py]
-
-Tomaremos de este fichero los datos para la conexión del wifi que cargaremos en el fichero **boot.py**
-
-```python
-
-# This file is executed on every boot (including wake-boot from deepsleep)
-#import esp
-#esp.osdebug(None)
-
-
-import network
-import time
-import config
-import machine
-
-v = 0.6
-
-try:
-    w = network.WLAN(network.STA_IF)
-    if not w.active():
-        w.active(True)
-    if not w.isconnected():
-        print(config.SSID, config.WIFI_PASSWD)
-        w.connect(config.SSID, config.WIFI_PASSWD)
-
-        while not w.isconnected() :
-            time.sleep(1)
-            print('.', end = '')
-        
-    print(f'IP: {w.ifconfig()[0]}')
-except Exception as e:
-    print(f'Error {e}. \nReset in 10 seconds')
-    time.sleep(10)
-    machine.reset()
-
-#import webrepl
-#webrepl.start()
-
-
-```
-
-Donde intentamos conecta al wifi y si no nos funciona resetamos la placa.
-
-
-
-Desde el fichero main, solo importamos el fichero **test_io_adafruit** y ejecutamos el método **MainMQTT**
-
-```python
-import test_io_adafruit
-test_io_adafruit.MainMQTT()
-
-```
-
-Por último, el fichero donde leemos los sensores y enviamos los datos a Adafruit IO, tomando los datos de configuración del sensor DHT22 del fichero config.py
-
-En el bucle central guardamos el tiempo de la última lectura y hasta que no sea mayor al de la siguiente lectura ...
-
-```python
-    now = utime.ticks_ms()
-    elapsedTime = utime.ticks_diff(now, last_Temp)
-    if elapsedTime > (everySeconds*1000):
-        # leeemos el sensor y enviamos
-```
-
-
-Dormimos a la placa en modo bajo consumo con **machine.deepsleep(everySeconds*1000)**. Esto apaga la placa y la enciende pasado ese tiempo.
-
-
-```python
 # MQTT test 
+# basado en https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266/
 
 from umqttsimple import MQTTClient, MQTTException
 import ubinascii
@@ -127,6 +8,8 @@ import time         # Para las esperas
 import utime
 import dht
 import config
+
+
 
 v = '0.6.9'
 
@@ -143,7 +26,7 @@ topic_subHum = topic_subSensor + b'Hum'
 
 sensorDHT22 = dht.DHT22(machine.Pin(14))
 
-def getSensorData():
+def getData():
     sensorDHT22.measure()
     return (sensorDHT22.temperature(), sensorDHT22.humidity())
 
@@ -203,7 +86,7 @@ def mainMQTT(everySeconds = 30):
             print('check4msgs...')
             client.check_msg() # Check por new messages and call the callBack function            
             try:
-                temp, hum = getSensorData()
+                temp, hum = getData()
                 print(f'{msgTime} Hum:{hum} Temp:{temp}')
                 try:
                     if client != None:
@@ -230,7 +113,3 @@ def mainMQTT(everySeconds = 30):
             
         time.sleep_ms(100)
         
-
-```
-
-

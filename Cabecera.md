@@ -4,14 +4,12 @@
 
 ## Versión 0.8
 
-![Licencia CC by SA](./images/Licencia_cc_peque.png) 
+![](./images/Licencia_cc_peque.png)  
 
-## by @javacasm
+__Licencia CC by SA__ by @javacasm
 
-
-### José Antonio Vacas Martínez
+José Antonio Vacas Martínez
 
 ### https://elCacharreo.com
 
-
-## Marzo 2022
+Marzo 2022

@@ -181,7 +181,7 @@ all:  1 2 3 4 5 6 7 8 9
 		7.3.1.MQTT_ejemplo.md \
 		7.3.3.AdafruitIO.md \
 		7.4.0.ControlRemoto_mqtt.md \
-		7.4.1.Control_Adafruit_io.md \
+		7.4.1.Control_Adafruit_IO.md \
 		7.5.P.CO2_IOT.md 
 
 8:

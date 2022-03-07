@@ -19,6 +19,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla.docx \		
 		-o  $(S1)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
@@ -51,6 +52,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla.docx \		
 		-o  $(S2)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
@@ -71,6 +73,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla.docx \		
 		-o  $(S3)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
@@ -102,6 +105,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla.docx \		
 		-o  $(S4)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
@@ -120,6 +124,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla.docx \		
 		-o  $(S5)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
@@ -141,6 +146,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla.docx \
 		-o  $(S6)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
@@ -174,13 +180,15 @@ all:  1 2 3 4 5 6 7 8 9
 		7.3.0.MQTT.md \
 		7.3.1.MQTT_ejemplo.md \
 		7.3.3.AdafruitIO.md \
-		7.4.ControlRemoto_mqtt.md \
+		7.4.0.ControlRemoto_mqtt.md \
+		7.4.1.Control_Adafruit_io.md \
 		7.5.P.CO2_IOT.md 
 
 8:
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla.docx \		
 		-o  $(S8)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
@@ -193,6 +201,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla.docx \
 		-o  $(S9)  \
 		Cabecera.md        \
 		Cabecera_latex.md \

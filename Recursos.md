@@ -208,8 +208,6 @@ https://geekytheory.com/tutorial-raspberry-pi-gpio-y-mqtt-parte-1
 
 
 
-
-
 CUIDADO CON PUBLICAR LA CLAVE ..... 
 
 Subscripción a los errors y a throttle
@@ -227,6 +225,17 @@ Subscripción a los errors y a throttle
 [Api](https://io.adafruit.com/api/docs/mqtt.html?python#adafruit-io-mqtt-api)
 
 [Feed](https://io.adafruit.com/javacasm/feeds/dht22-2-temp)
+
+### Oled
+
+https://randomnerdtutorials.com/micropython-oled-display-esp32-esp8266/
+
+https://docs.micropython.org/en/latest/esp8266/tutorial/ssd1306.html
+
+https://www.esploradores.com/oled_ssd1306/
+
+[Referencia sobre la pantalla](https://www.twobitarcade.net/article/oled-displays-i2c-micropython/)
+
 
 # Referencias
 

@@ -11,7 +11,11 @@
 
 [ESP-Now con arduino](https://randomnerdtutorials.com/esp-now-esp32-arduino-ide/)
 
+
+
 [Web server + esp-now](https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/)
+
+https://www.esploradores.com/practica-6-conexion-esp-now/
 
 ### micropython
 

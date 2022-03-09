@@ -1,26 +1,54 @@
-# based in https://randomnerdtutorials.com/micropython-oled-display-esp32-esp8266/
-from machine import Pin, SoftI2C
+import machine  
 import ssd1306
-from time import sleep
+import time 
+import random
+
+v= '0.5'
+
+# Creamos el objeto i2c con los pines 21 (SCL)  y 22 (SDA)
+i2c = machine.SoftI2C(scl = machine.Pin(21), sda = machine.Pin(22))
 
 
-v= '0.3.1'
+oled_width = 128 # ancho
+oled_height = 64 # alto
+oled = ssd1306.SSD1306_I2C(oled_width, oled_height, i2c, addr=0x3c) # Podria ser tambien 0x34
 
-# ESP32 Pin assignment 
-i2c = SoftI2C(scl=Pin(22), sda=Pin(21))
-
-
-oled_width = 128
-oled_height = 64
-display = ssd1306.SSD1306_I2C(oled_width, oled_height, i2c,addr=0x3c)
-
-def text_test():
+def show_text():
     for i in range(0, oled_height + 1 ,8):
-        display.text(f'Hello, OLED {i}!', 0, i)
+        oled.text(f'Linea numero {i}', 0, i) # altura del texto 8 pixels
             
-    display.show()
+    oled.show() # Mostramos el contenido
     
-def scroll_test():
+def scroll_display(scroll_x = -4, scroll_y = -2):
     for i in range(0, oled_width + 1,4):
-        display.scroll(4,0)
-        display.show()
+        oled.scroll(scroll_x, scroll_y)
+        oled.show()
+
+def slow_fill(finalShow = False,color = 1):
+    for x in range(oled_width):
+        for y in range(oled_height):
+            oled.pixel(x,y,color)
+            if not finalShow:
+                oled.show()
+    if finalShow:
+        oled.show()
+
+def randomLines(N=100,finalShow = False):
+    for i in range(N):
+        oled.line(random.randrange(oled_width),random.randrange(oled_height),
+                  random.randrange(oled_width),random.randrange(oled_height),
+                  1)
+        if not finalShow:
+            oled.show()
+    if finalShow:
+        oled.show()
+
+def randomRects(N=100,finalShow = False):
+    for i in range(N):
+        oled.rect(random.randrange(oled_width),random.randrange(oled_height),
+                  random.randrange(oled_width),random.randrange(oled_height),
+                  1)
+        if not finalShow:
+            oled.show()
+    if finalShow:
+        oled.show()

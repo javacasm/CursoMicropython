@@ -1,15 +1,3 @@
-# OLED color
-
-
-Ejemplo la TTGO
-
-https://www.esploradores.com/lcd_color_st7789-reloj/
-
-Tetris
-
-https://forum.micropython.org/viewtopic.php?t=7498
-
-```python
 import time
 import random
 import machine
@@ -44,20 +32,3 @@ while True:
         ),
     )
     time.sleep(2)
-```
-
-## TTGO color
-
-
-
-https://www.instructables.com/TTGO-color-Display-With-Micropython-TTGO-T-display/
-
-
-[Modulo para la pantalla](https://github.com/devbis/st7789py_mpy)
-
-[micropython psRAM logo](https://github.com/loboris/MicroPython_ESP32_psRAM_LoBo/issues/310)
-
-## Referencias
-
-https://www.instructables.com/TTGO-color-Display-With-Micropython-TTGO-T-display/
-

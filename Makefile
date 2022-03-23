@@ -188,14 +188,16 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla.docx \		
+		--reference-doc=plantilla.docx \
 		-o  $(S8)  \
-		Cabecera.md        \
+		Cabecera.md \
 		Cabecera_latex.md \
-		8.2.oled.md \
-		8.3.display.md \
-		8.4.TFT.md \
-		8.5.Matriz_led.md
+		8.0.Pantallas.md \
+		8.2.0.oled.md \
+		8.2.3.OLED_SPI.md \
+		8.4.TTGO.md \
+		8.5.m5stack_ui.md
+
 
 9:
 	pandoc --pdf-engine=xelatex   \
@@ -213,5 +215,6 @@ all:  1 2 3 4 5 6 7 8 9
 		9.4.Precompilados.md \
 		9.5.CodigoNativo.md \
 		9.9.compilando-micropython.md
+
 
 

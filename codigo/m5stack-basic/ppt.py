@@ -1,16 +1,3 @@
-## m5Stack
-
-Una de las características más interesantes de los equipos m5stack es que incorporan una pantalla grande y de buena calidad y botones que podemos usar.
-
-En este caso vamos a usar el firmware oficial de m5Stack que nos facilita enormemente el uso del interface a costa de no poder usar la última versión de micropython. La versión que incluyen es la 1.12
-
-Vamos a ver que el módulo **m5stack** nos facilita enormemente el trabajo, permitiéndonos mostrar imágenes o reproducir sonidos con facilidad:
-
-
-![](./images/m5stack_ppt.jpg)
-
-
-```python
 # rock, paper, scissors
 from m5stack import *
 import utime as time
@@ -68,6 +55,3 @@ while True:
       pass
   
   time.sleep(0.02)
-```
-
-

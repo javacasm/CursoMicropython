@@ -65,6 +65,26 @@ def test_fill(l = 25 ):
         for y in range(0,tft_height//l):
             tile(x*l + tft_width%l//2, y*l + tft_height%l//2, l,  x*l,y*l,(x+y)*l//2)
 
+def fall(x=tft_width//2, y=0, l=20, r=0, g=0, b=150,back_color = st7789.color565(10,10,10)):
+    frame()
+    lButton=machine.Pin(0,machine.Pin.PULL_DOWN)
+    rButton=machine.Pin(35,machine.Pin.PULL_DOWN)
+    while y+l<tft_height-1:
+        tft.fill_rect(x,y,l,l,back_color)
+        y+=1
+        if lButton.value() == 0:
+            x -= 5
+            if x < 1 :
+                x = 1
+        if rButton.value() == 0:
+            x += 5    
+            if x  > tft_height - l - 2:
+                x = tft_width - l - 2
+
+        tile(x,y,l,r,g,b)
+        time.sleep(0.1)
+
+
 def full():
     clear(st7789.color565(10,10,10))
     frame()

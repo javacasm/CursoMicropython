@@ -237,6 +237,30 @@ https://www.esploradores.com/oled_ssd1306/
 [Referencia sobre la pantalla](https://www.twobitarcade.net/article/oled-displays-i2c-micropython/)
 
 
+## TTGO color
+
+
+
+https://www.instructables.com/TTGO-color-Display-With-Micropython-TTGO-T-display/
+
+
+Ejemplo C++ https://github.com/Xinyuan-LilyGO/TTGO-T-Display
+
+[Modulo para la pantalla](https://github.com/devbis/st7789py_mpy)
+
+[micropython psRAM logo](https://github.com/loboris/MicroPython_ESP32_psRAM_LoBo/issues/310)
+
+## Referencias
+
+https://www.instructables.com/TTGO-color-Display-With-Micropython-TTGO-T-display/
+
+## m5stack
+
+Ejemplos 
+https://github.com/m5stack/M5Stack_MicroPython
+
+playing wav https://www.hackster.io/lukasmaximus89/play-wav-files-on-your-m5stack-3bee7e
+
 # Referencias
 
 ![Documentación oficial micropython](https://docs.micropython.org/en/latest/index.html)

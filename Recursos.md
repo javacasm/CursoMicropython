@@ -261,6 +261,13 @@ https://github.com/m5stack/M5Stack_MicroPython
 
 playing wav https://www.hackster.io/lukasmaximus89/play-wav-files-on-your-m5stack-3bee7e
 
+## Optimizando
+
+
+
+[Write fast code with micropython](https://www.youtube.com/watch?v=hHec4qL00x0)
+    
+
 # Referencias
 
 ![Documentación oficial micropython](https://docs.micropython.org/en/latest/index.html)

@@ -207,14 +207,10 @@ all:  1 2 3 4 5 6 7 8 9
 		-o  $(S9)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
-		9.1.Inside_micropython.md \
-		9.2.REPL.md \
-		9.3.1.mejorandoVelcidad.md \
-		9.3.2.Optimizaciones.md \
-		9.3.3.OptimizacionMemoria.md \
-		9.4.Precompilados.md \
-		9.5.CodigoNativo.md \
-		9.9.compilando-micropython.md
-
-
-
+		9.0.0.micropython.md \
+		9.0.1.estructura_codigo.md\
+		9.1.compilacion_micropython.md\
+		9.3.1.mejorandoVelcidad.md\
+		9.3.2.Optimizaciones.md\
+		9.9.compilando_porting_micropython.md
+		

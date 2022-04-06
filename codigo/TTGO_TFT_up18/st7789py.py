@@ -2,6 +2,8 @@ import time
 from micropython import const
 import ustruct as struct
 
+v = '1.1'
+
 # commands
 ST77XX_NOP = const(0x00)
 ST77XX_SWRESET = const(0x01)
@@ -75,6 +77,12 @@ def color565(r, g=0, b=0):
         r, g, b = r  # see if the first var is a tuple/list
     except TypeError:
         pass
+    if r>255:
+        r = 255
+    if g>255:
+        g = 255  
+    if b>255:
+        b = 255          
     return (r & 0xf8) << 8 | (g & 0xfc) << 3 | b >> 3
 
 

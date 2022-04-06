@@ -1,6 +1,9 @@
 import machine
-import st7789
+import st7789py as st7789
+import random
+import time
 
+v = 0.3
 
 '''
 Pines SPI
@@ -22,17 +25,26 @@ BL_PIN = 14
 bl = machine.Pin(4, machine.Pin.OUT)
 tft_width = 135
 tft_height = 240
-spi = machine.SPI(2, baudrate=10000000, polarity=1, sck=machine.Pin(SCLK_PIN), mosi=machine.Pin(MOSI_PIN))
+spi = machine.SPI(1, baudrate=30000000, polarity=1, phase=1, sck=machine.Pin(SCLK_PIN), mosi=machine.Pin(MOSI_PIN))
 tft = st7789.ST7789(spi,
                     tft_width,
                     tft_height,
                     reset = machine.Pin(RES_PIN, machine.Pin.OUT),
                     cs = machine.Pin(CS_PIN, machine.Pin.OUT),
                     dc = machine.Pin(DC_PIN, machine.Pin.OUT),
-                    backlight=bl)
+                    backlight=bl,
+                    rotation=0)
 tft.init()
 
 
 # bl.on()
 
-tft.fill(st7789.RED)
+while True:
+    tft.fill(
+        st7789.color565(
+            random.getrandbits(8),
+            random.getrandbits(8),
+            random.getrandbits(8),
+        ),
+    )
+    time.sleep_ms(500)

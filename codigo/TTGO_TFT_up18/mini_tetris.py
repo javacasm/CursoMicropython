@@ -1,10 +1,10 @@
 # Tetris
 
-v = '0.6'
+v = '0.6.1'
 
 import time
 import machine
-import st7789
+import st7789py as st7789
 import random
 
 BL_PIN = 4
@@ -29,14 +29,12 @@ spi = machine.SPI(
     sck=machine.Pin(SCK_PIN),
     mosi=machine.Pin(MOSI_PIN))
 
-
 tft = st7789.ST7789(
     spi, tft_width, tft_height,
     reset=machine.Pin(RESET_PIN, machine.Pin.OUT),
     cs=machine.Pin(CS_PIN, machine.Pin.OUT),
     dc=machine.Pin(DC_PIN, machine.Pin.OUT),
-    backlight=bl,
-    rotation=0)
+    backlight=bl)
 
 tft.init()
 

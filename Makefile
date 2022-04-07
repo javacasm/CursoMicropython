@@ -195,7 +195,7 @@ all:  1 2 3 4 5 6 7 8 9
 		8.0.Pantallas.md \
 		8.2.0.oled.md \
 		8.2.3.OLED_SPI.md \
-		8.4.TTGO.md \
+		8.4.1.TTGO.md \
 		8.5.m5stack_ui.md
 
 

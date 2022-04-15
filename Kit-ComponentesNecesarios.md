@@ -1,5 +1,11 @@
 ## Componentes
 
+#### v 0.9
+
+A lo largo del curso se usan muchos componentes en diferentes montajes, y a medida que vayamos ampliando el curso se usarán más. 
+
+Esta lista no pretende ser exhaustivo...
+
 ### Necesarios
 
 Son muchas las placas que podemos usar para seguir este curso, pero por su excelente relación calidad/precio, te recomiendo que si tienes que comprar una te decantes por un modelo ESP32.
@@ -39,7 +45,7 @@ Si te interesa trabajar con cámara también te recomiendo esta pequeña placa l
 
 #### Otros componentes
 
-Estos componentes son los que vamos a usar los proyectos del curso>
+Estos componentes son algunos de los que vamos a usar en los proyectos del curso, pero no es una lista exhaustivo
 
 * Un par de placas protoboard
 * Varios leds  + sus resistencias 220 Ohmios
@@ -52,11 +58,54 @@ Estos componentes son los que vamos a usar los proyectos del curso>
 * Pantalla LCD con conexión i2c, de al menos 2 líneas y 16 columnas (si es de 4x20 mejor)
 * Pantalla Oled monocroma
 * Un par de servos g90 o similares
-* Un Joystick analógico
 * Al menos 1 relé
-* Motor paso a paso barato, tipo  28BYJ-48 + driver ULN2003 
+* Cable USB adecuado a tu placa
 
 
 # Equipo informático
 
 Necesitarás un ordenador conectado a internet y una conexión wifi
+
+# ¿Dónde comprarlo?
+
+Puedes encontrar estos materiales en casi cualquier tienda de material electrónico o amazon o aliexpress si te manejas con ellos.
+
+Si me pides recomendación sobre una tienda donde comparlo todo, yo te recomendaría [Bricogeek](https://tienda.bricogeek.com), expertos en material electrónico que además de tener materiales de calidad te pueden ayudar en lo que necesites.
+
+* [Placa de prototipo mediana](https://tienda.bricogeek.com/varios/1219-placa-de-prototipo-8x5cm-400-puntos.html)
+* [Placa de prototipo mini](https://tienda.bricogeek.com/herramientas-de-prototipado/211-mini-breadboard-adhesiva.html)
+![](./images/placa-de-prototipo-8x5cm-400-puntos.jpg)
+
+* [Cables M-M](https://tienda.bricogeek.com/cables/1361-cables-dupont-macho-macho-20-cm-40-unidades.html)
+* [Cables M-H](https://tienda.bricogeek.com/cables/1362-cables-dupont-macho-hembra-20-cm-40-unidades.html)
+* [Cables H-H](https://tienda.bricogeek.com/cables/1363-cables-dupont-hembra-hembra-20-cm-40-unidades.html)
+![](./images/cables-dupont-macho-macho-20-cm-40-unidades.jpg)
+
+* [Kit de 37 sensores](https://tienda.bricogeek.com/kits-arduino/832-kit-de-37-sensores-compatible-arduino-1247563871496.html)
+![](./images/kit-de-37-sensores-compatible-arduino.jpg)
+
+* [Miniservo](https://tienda.bricogeek.com/servomotores/1601-micro-servo-mg90-270-grados.html)
+![](./images/micro-servo-mg90-270-grados.jpg)
+* [Pantalla OLED](https://tienda.bricogeek.com/pantallas-oled/905-pantalla-oled-13-ssh1106-128x64.html)
+![](./images/pantalla-oled-13-ssh1106-128x64.jpg)
+[Pantalla LCD con conexión I2C de 4x20](https://www.amazon.es/Display-Adapter-Raspberry-pantalla-proyecci%C3%B3n/dp/B07XT7LN61/)
+
+![](./images/lcd_i2c.png)
+
+[Kit de componentes básicos de electrónica](https://www.amazon.es/Componentes-Electr%C3%B3nicos-Alimentaci%C3%B3n-Potenci%C3%B3metro-Especificaciones/dp/B06Y3X9YF4)
+
+![](./images/kit_basico_electr%C3%B3nica.png)
+
+Si quieres una placa ESP32 sencilla
+
+[ESP32 WROOM](https://tienda.bricogeek.com/arduino-compatibles/1274-esp32-wroom-wifi-bluetooth.html)
+![](./images/esp32-wroom-wifi-bluetooth.jpg)
+
+[Cable USB](https://tienda.bricogeek.com/cables/1471-cable-usb-micro-b-corto-85cm.html)
+
+
+Si quieres una placa más compleja y  **¡¡¡OJO SABES SOLDAR Y TIENES SOLDADOR!!!**
+
+[Adafruit HUZZAH32 - ESP32 ](https://tienda.bricogeek.com/placas-adafruit-feather/1108-adafruit-huzzah32-esp32-feather.html)
+![](./images/adafruit-huzzah32-esp32-feather.jpg)
+

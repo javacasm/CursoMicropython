@@ -67,7 +67,8 @@ all:  1 2 3 4 5 6 7 8 9
 		2.5.1.Instalacion_ESP32CAM.md \
 		2.6.Instalacion_raspiPico.md \
 		2.7.Instalacion_microbit.md \
-		2.11.Instalacion_m5stack.md
+		2.10.Instalacion_m5stack.md \
+		2.11.Actualización.md
 
 3:
 	pandoc --pdf-engine=xelatex   \

@@ -23,9 +23,10 @@ all:  1 2 3 4 5 6 7 8 9
 		-o  $(S1)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
-		0.0.0.Presentacion.md \
-		0.0.intro.md \
-		0.1.Indice.md \
+		0.0.Presentacion.md \
+		0.1.Que_podemos_hacer_con_micropython.md \
+		0.2.intro.md \
+		0.3.Indice.md \
 		1.0.Micropython.md \
 		1.2.0.Hardware.md \
 		1.2.1.PyBoard.md \

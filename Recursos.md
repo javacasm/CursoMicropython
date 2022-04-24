@@ -239,12 +239,11 @@ https://www.esploradores.com/oled_ssd1306/
 
 ## TTGO color
 
+[Página del fabricante](http://www.lilygo.cn/claprod_view.aspx?TypeId=62&Id=1126&FId=t28:62:28)
 
+[Diseño y ejemplos](https://github.com/Xinyuan-LilyGO/TTGO-T-Display)
 
-https://www.instructables.com/TTGO-color-Display-With-Micropython-TTGO-T-display/
-
-
-Ejemplo C++ https://github.com/Xinyuan-LilyGO/TTGO-T-Display
+[Proyectos de usuarios](https://www.instructables.com/TTGO-color-Display-With-Micropython-TTGO-T-display/)
 
 [Modulo para la pantalla](https://github.com/devbis/st7789py_mpy)
 

@@ -1,0 +1,23 @@
+import machine
+import time
+pin_rele=27
+pin_dht=15
+
+rele=machine.Pin(pin_rele, machine.Pin.OUT)
+
+
+sensor=dht.DHT22(machine.Pin(pin_dht))
+                 
+def ventilador():
+while True:
+    
+    sensor.measure()
+ 
+     if sensor.temperature() >24 :
+            rele.on()
+            print("Encendemos el rele")
+        else :
+            rele.off()
+            print("Apagamos el rele")
+            
+        time.sleep(1)

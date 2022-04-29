@@ -9,3 +9,5 @@ pin_ldr10 = 36 # A4
 pin_ldr11 = 39 # A5
 
 
+pin_joyX = 35
+pin_joyY = 34

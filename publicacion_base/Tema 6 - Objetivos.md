@@ -4,7 +4,7 @@ En el tema 6 vamos a hablar sobre redes y cómo utilizar desde micropython.
 
 Empezaremos por conectarnos a nuestra red Wifi, aprovechando para ajustar la hora con precisión usando los servidores NTP.
 
-Aprenderemos sobre la conexiónes Bluetooth y veremos cómo podemos conectarnos a un móvil.
+Aprenderemos sobre la conexiones Bluetooth y veremos cómo podemos conectarnos a un móvil.
 
 Por último convertiremos a nuestra placa en un servidor web, aprendiendo el funcionamiento de estos servidores y el lenguaje HTML.
 

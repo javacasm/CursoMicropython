@@ -38,3 +38,5 @@ def echoSerial():
         c =uart0.read()
         uart0.write(c)
         print('< {c}\necho > {c}')
+
+# test_uart.sendCommands(['H','L','T'],retardo_ms=20)

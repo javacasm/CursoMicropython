@@ -108,6 +108,11 @@ void loop() {
 }
 ```
 
+Sobre la velocidad....
+9600 = 800 bytes/segundo
+
+### Programa avanzado
+
 
 UART.irq(trigger, priority=1, handler=None, wake=machine.IDLE)¶
 Create a callback to be triggered when data is received on the UART.

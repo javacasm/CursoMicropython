@@ -15,3 +15,4 @@ while True:
       led.off()
       print('off')
     time.sleep_ms(200) # ponemos un pequeño retardo para no saturar la pantalla
+    

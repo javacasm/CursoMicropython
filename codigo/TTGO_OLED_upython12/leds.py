@@ -37,7 +37,7 @@ def kit(tiempo_espera = 200):
         utime.sleep_ms(tiempo_espera) # esperamos ..
         leds[i].off() # lo apagamos
     print('bajando ...')        
-    for i in range(len(leds)-1,0,-1): # N -1 es el último
+    for i in range(len(leds)-1,-1,-1):  # N-1 es el último y terminamos en el 0        leds[i].on() # encendemos
         print(i)
         leds[i].on() # encendemos
         

@@ -2,7 +2,7 @@
 
 ![](./images/Logo_uPython_small.png)
 
-## Versión 0.9
+## Versión 0.9.3
 
 ![](./images/Licencia_cc_peque.png)  
 
@@ -12,4 +12,4 @@ José Antonio Vacas Martínez
 
 ### https://elCacharreo.com
 
-Abril 2022
+Mayo 2022

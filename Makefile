@@ -53,7 +53,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla.docx \
+		--reference-doc=plantilla_micropython.docx \
 		-o  $(S2)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
@@ -66,7 +66,7 @@ all:  1 2 3 4 5 6 7 8 9
 		2.4.OtrosEntornos.md \
 		2.5.0.Install_consola.md \
 		2.5.1.Instalacion_ESP32CAM.md \
-		2.6.Instalacion_raspiPico.md \
+		2.6.0.Instalacion_raspiPico.md \
 		2.7.Instalacion_microbit.md \
 		2.10.Instalacion_m5stack.md \
 		2.11.Actualización.md
@@ -75,7 +75,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla.docx \
+		--reference-doc=plantilla_micropython.docx \
 		-o  $(S3)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
@@ -83,10 +83,13 @@ all:  1 2 3 4 5 6 7 8 9
 		3.0.1.Modulos_python.md \
 		3.1.0.Hello_Led.md \
 		3.1.1.Hello_led_pico.md \
+		3.1.2.Hello_microbit.md \
 		3.2.0.ficheros_codigo.md \
 		3.2.1.retardos.md \
 		3.2.2.bucles.md \
-		3.2.3.led_externo.md \
+		3.2.3.0.Breadboard.md \
+		3.2.3.1.led_externo.md \
+		3.2.3.2.led_externo_microbit.md \
 		3.2.4.ficheros_main_boot.md \
 		3.3.0.Funciones.md \
 		3.3.1.Funciones_argumento.md \
@@ -95,10 +98,12 @@ all:  1 2 3 4 5 6 7 8 9
 		3.5.Reles.md \
 		3.6.0.buttons.md \
 		3.6.1.Button_pullup.md \
+		3.6.2.Botones_microbit.md \
 		3.6.5.Interrupciones.md \
 		3.7.0.condicionales.md \
 		3.9.0.PWM.md \
 		3.9.1.Efectos_PWM.md \
+		3.9.2.PWM_microbit.md \
 		3.10.servos.md \
 		3.11.controlMotores.md \
 		3.13.Leds_RGB.md 		
@@ -107,7 +112,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla.docx \
+		--reference-doc=plantilla_micropython.docx \
 		-o  $(S4)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
@@ -126,7 +131,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla.docx \
+		--reference-doc=plantilla_micropython.docx \
 		-o  $(S5)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
@@ -148,7 +153,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla.docx \
+		--reference-doc=plantilla_micropython.docx \
 		-o  $(S6)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
@@ -172,7 +177,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla.docx \
+		--reference-doc=plantilla_micropython.docx \
 		-o  $(S7)  \
 		Cabecera.md \
 		Cabecera_latex.md \
@@ -190,7 +195,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla.docx \
+		--reference-doc=plantilla_micropython.docx \
 		-o  $(S8)  \
 		Cabecera.md \
 		Cabecera_latex.md \
@@ -205,7 +210,7 @@ all:  1 2 3 4 5 6 7 8 9
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla.docx \
+		--reference-doc=plantilla_micropython.docx \
 		-o  $(S9)  \
 		Cabecera.md        \
 		Cabecera_latex.md \

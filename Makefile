@@ -67,7 +67,7 @@ all:  1 2 3 4 5 6 7 8 9
 		2.5.0.Install_consola.md \
 		2.5.1.Instalacion_ESP32CAM.md \
 		2.6.0.Instalacion_raspiPico.md \
-		2.7.Instalacion_microbit.md \
+		2.7.0.Instalacion_microbit.md \
 		2.10.Instalacion_m5stack.md \
 		2.11.Actualización.md
 
@@ -90,6 +90,7 @@ all:  1 2 3 4 5 6 7 8 9
 		3.2.3.0.Breadboard.md \
 		3.2.3.1.led_externo.md \
 		3.2.3.2.led_externo_microbit.md \
+		3.2.3.3.microbit_pines.md \
 		3.2.4.ficheros_main_boot.md \
 		3.3.0.Funciones.md \
 		3.3.1.Funciones_argumento.md \
@@ -120,6 +121,7 @@ all:  1 2 3 4 5 6 7 8 9
 		4.1.Tipos_formatos.md \
 		4.2.0.ADC.md \
 		4.2.1.ADC_esp32.md \
+		4.2.4.ADC_microbit.md \
 		4.3.0.SensoresAnalogicos.md \
 		4.3.2.Controlando_brillo_led.md \
 		4.4.0.Concionales_2.md \

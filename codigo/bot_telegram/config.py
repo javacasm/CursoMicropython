@@ -6,5 +6,5 @@ wifi_config = {
 }
 
 utelegram_config = {
-    'token': '1325688004:AAE8-mimQFntGBz_cPwif7GwQo9osH6G_D0'
+    'token': 'mitoken'
 }

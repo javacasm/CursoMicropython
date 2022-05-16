@@ -11,15 +11,43 @@ S7  = "Tema 7 IoT y MQTT.docx"
 S8  = "Tema 8 Pantallas gráficas.docx"
 S9  = "Tema 9 Creación de modulos micropython.docx"
 
+m = "Programando micro:bit con micropython.docx"
 
 
-all:  1 2 3 4 5 6 7 8 9
+all:  1 2 3 4 5 6 7 8 9 m
+
+m: 
+	pandoc --pdf-engine=xelatex   \
+		-V papersize:a4paper    \
+		--template=./LaTeX_ES.latex    \
+		--reference-doc=plantilla_micropython.docx \
+		-o  $(m)  \
+		Cabecera.md        \
+		Cabecera_latex.md \
+		1.0.Micropython.md \
+		1.6.0.microbit.md \
+		1.6.1.microbit_v2.md \
+		2.7.0.Instalacion_microbit.md \
+		2.7.1.mejora_microbit_v2.md \
+		3.1.2.Hello_microbit.md \
+		3.2.3.2.led_externo_microbit.md \
+		3.2.3.3.microbit_pines.md \
+		3.6.2.Botones_microbit.md \
+		3.8.2.microbit_touch_v2.md \
+		3.9.2.PWM_microbit.md \
+		4.2.4.ADC_microbit.md \
+		4.5.1.sonido_microbit.md \
+		5.12.I2C_microbit_v2.md \
+		p.estroboscopio_microbit.md \
+		microbit_display_av.md \
+		microbit.md \
+		microbit_display_basico.md
 
 1:
 	pandoc --pdf-engine=xelatex   \
 		-V papersize:a4paper    \
 		--template=./LaTeX_ES.latex    \
-		--reference-doc=plantilla.docx \
+		--reference-doc=plantilla_micropython.docx \
 		-o  $(S1)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
@@ -125,7 +153,8 @@ all:  1 2 3 4 5 6 7 8 9
 		4.3.0.SensoresAnalogicos.md \
 		4.3.2.Controlando_brillo_led.md \
 		4.4.0.Concionales_2.md \
-		4.5.DAC.md \
+		4.5.0.DAC.md \
+		4.5.1.sonido_microbit.md \
 		4.6.MedidaBateria.md \
 		4.7.proyectos.md
 

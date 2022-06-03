@@ -6,9 +6,7 @@ import time
 import config
 import urequests
 
-v = 0.4
-
-
+v = 0.6
 
 def test_DHT22(pin = config.pinDHT):
     dhtsensor = dht.DHT22(machine.Pin(pin))
@@ -55,7 +53,7 @@ def pubData(field1,field2,field3,field4,field5,field6,field7,field8):
         request_headers = {'Content-Type': 'application/json'}
 
         request = urequests.post(
-            'http://api.thingspeak.com/update?api_key=' + config.api_key,
+            'http://api.thingspeak.com/update?api_key=' + config.thingSpeak_api_key,
             json = dict_datos,
             headers = request_headers)
         if request.text == '0':
@@ -65,13 +63,19 @@ def pubData(field1,field2,field3,field4,field5,field6,field7,field8):
         request.close()
 
 def test_all(forever = False):
-    devs = u_ina219.init_all()
+    devs = u_ina219.init_all(config.pinSDA,config.pinSCL)
     while forever:
-        t,h=test_DHT22()
-        ts=test_all_ds18x20()
+        ts = []
+        if config.pinDHT>0:
+            t,h=test_DHT22()
+        if config.pinDS>0:
+            ts=test_all_ds18x20()
         data=u_ina219.read_all(devs = devs)
         if len(ts) == 2 and len(data) == 4:
             pubData(t,h,data[0],data[1],ts[0],data[2],data[3],ts[1])
             print('pub data')
         else:
             print(f'Not enough data: ts:{ts} data:{data}')
+        if config.DEEP_SLEEP:
+            print(f'deepsleep({config.everySeconds*1000})')
+            machine.deepsleep(config.everySeconds*1000)

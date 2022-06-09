@@ -3,6 +3,7 @@ import onewire, ds18x20
 import time
 import config
 
+# how to fix https://forum.micropython.org/viewtopic.php?t=5967
 
 def bRom2str(rom):
     str=''
@@ -15,6 +16,8 @@ def bRom2str(rom):
 
 def test_all_ds18x20(pin = config.pinDS):
     # from https://docs.micropython.org/en/latest/esp8266/tutorial/onewire.html
+    # https://docs.micropython.org/en/latest/esp32/quickref.html?highlight=onewire
+    # https://github.com/micropython/micropython/blob/master/drivers/onewire/ds18x20.py
     dat = machine.Pin(pin)
     ds = ds18x20.DS18X20(onewire.OneWire(dat))
     roms = ds.scan()

@@ -1,18 +1,5 @@
 ## Comunicaciones serie entre dispositivos
 
-uart 
-
-
-uart2 = UART(2, baudrate=9600, tx=17, rx=16)
-
-uart.read(10)       # read 10 characters, returns a bytes object
-uart.read()         # read all available characters
-uart.readline()     # read a line
-uart.readinto(buf)  # read and store into the given buffer
-uart.write('abc')   # write the 3 characters
-
-
-UART.any()¶
 
 
 ![](./images/Wemos_d1_R32_serial_Arduino_UNO_bb.png)
@@ -126,3 +113,19 @@ handler an optional function to be called when new characters arrive.
 wake can only be machine.IDLE.
 
 
+## API Uart
+
+uart 
+
+from machine import  UART
+
+uart = UART(2, baudrate=9600, tx=17, rx=16)
+
+uart.read(10)       # read 10 characters, returns a bytes object
+uart.read()         # read all available characters
+uart.readline()     # read a line
+uart.readinto(buf)  # read and store into the given buffer
+uart.write('abc')   # write the 3 characters
+
+
+UART.any()¶

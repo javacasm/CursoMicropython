@@ -1,6 +1,6 @@
 ## Componentes
 
-#### v 0.9
+#### v 0.99
 
 A lo largo del curso se usan muchos componentes en diferentes montajes, y a medida que vayamos ampliando el curso se usarán más. 
 

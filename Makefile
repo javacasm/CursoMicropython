@@ -107,8 +107,9 @@ m:
 		-o  $(S3)  \
 		Cabecera.md        \
 		Cabecera_latex.md \
-		3.0.0.Entrada_salida.md \
-		3.0.1.Modulos_python.md \
+		3.0.0.proyectos_microcontroladores.md \
+		3.0.2.Entrada_salida.md \
+		3.0.5.Modulos_python.md \
 		3.1.0.Hello_Led.md \
 		3.1.1.Hello_led_pico.md \
 		3.1.2.Hello_microbit.md \

@@ -17,10 +17,14 @@ A la hora de elegir entre los distintos modelos de placas ESP32, te recomiendo q
 
 #### ESP32 WROOM-32 DEVKIT 
 
-Si no dispones de ninguna placa de este tipo puedes comprar perfectamente la placa en formato plano pero tienes que tener en cuenta que no se conecta bien a una placa de prototipo de necesitará al menos 2 de estas placas de prototipo para poder conectar tu placa con comodidad
+El ESP32 en formato plano es el más estándar.
 
 ![](./images/esp32-wroom-32-devkit-v1-placa-con-wifi-y-bluetooth.jpg)
 
+
+Tienes que tener en cuenta que al ser más ancha necesitarás al menos 2 placas de prototipo para poder conectarlo con comodidad
+
+![](./images/PlacaAncha1.jpg)
 
 #### Wemos D1 R32
 

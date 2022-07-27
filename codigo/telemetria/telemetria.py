@@ -2,11 +2,9 @@ import socket
 import time
 import json
 import config
-import test_DHT22
-import test_hmc5883l
+
 import MyDateTime
-import blinky
-import test_rele
+
 
 test_rele.Verbose = False
 
@@ -23,7 +21,7 @@ def debug(msg):
 paquetes = 0
 errores = 0
 
-def sendDict(diccio,server,port):
+def sendDict(diccio, server, port):
     global paquetes, errores
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.settimeout(config.net_timeout) # https://docs.micropython.org/en/latest/library/socket.html
@@ -40,6 +38,10 @@ def sendDict(diccio,server,port):
         data, server = sock.recvfrom(4096)
         strData=data.decode('UTF-8')
         debug(f'received "{strData}"')
+        try:
+            dict_result=json.loads(strData)
+        except Exception as e:
+            print(f'Error converting response to json {e}')
         if strData.startswith('OK') :
             debug('Comunicaciones OK!!!')
             resultado =  True
@@ -73,35 +75,3 @@ def sendDict(diccio,server,port):
         sock.close()
     return resultado
 
-def sendData(server = config.telemetry_server, port = config.telemetry_port):
-    global paquetes, errores
-    data = {}
-    try:
-        temp,hum = test_DHT22.getData()
-        data['temp'] = temp
-        data['hum'] = hum
-    except Exception as exDHT22:
-        print(f'Error getting DHT22 data {exDHT22}')
-        
-    try:    
-        x,y,z,heading_gr,heading_min = test_hmc5883l.read_compas()
-        data['heading'] = heading_gr
-    except Exception as exCompass:
-        print(f'Error getting compass data {exCompass}')
-
-    data['v'] = v
-    data[f'rele{config.pinRele}'] = f"{'On' if test_rele.rele.value()>0 else 'Off'}"
-    timestamp = MyDateTime.getLocalTimeHumanFormat()    
-    data['time'] = timestamp
-    data['board'] = MY_ID
-    data['count'] = paquetes
-    data['errors'] = errores
-    sendDict(data,server,port)
-
-def test_forever(espera=5):
-    while True:
-         sendData()
-         blinky.tick(0.1)
-         time.sleep(espera)
-
-        

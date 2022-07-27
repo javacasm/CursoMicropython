@@ -6,7 +6,7 @@ import socket
 import time
 import json
 
-v = '0.4.5'
+v = '0.5.0'
 
 verbose = True
 
@@ -22,6 +22,7 @@ def listen(port=10086, ip = '192.168.1.136'):
     while True:
         data,addr=s.recvfrom(1024)
         dataDict = json.loads(data)
+        dataDict['addr'] = addr
         strAnswer = 'OK'
         if 'board' in dataDict.keys():
              print(f"Data from {dataDict['board']} ")

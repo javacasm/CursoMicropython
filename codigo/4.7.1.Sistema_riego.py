@@ -4,7 +4,7 @@ import time
 rele = machine.Pin(17, machine.Pin.OUT)
 
 adc36 = machine.ADC(machine.Pin(36), atten = machine.ADC.ATTN_11DB) # Hasta 3.3v
-adc36.width(machine.ADC.WIDTH_9BIT) # no necesitamos más precisión
+adc36.width(machine.ADC.WIDTH_10BIT) # no necesitamos más precisión
 
 medidaSueloHumedo = 600 # Los determinamos empíricamente
 medidaSueloSeco = 400

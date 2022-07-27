@@ -7,7 +7,7 @@ pin_leds = (26, 25, 17, 16, 27, 14, 12, 13) # Wemos D1 R32
 leds = []
 
 adc36 = machine.ADC(machine.Pin(36), atten = machine.ADC.ATTN_11DB) # Hasta 3.3v
-adc36.width(machine.ADC.WIDTH_9BIT) # no necesitamos más precisión
+adc36.width(machine.ADC.WIDTH_10BIT) # no necesitamos más precisión
 
 def inicializar():
     for pin in pin_leds:

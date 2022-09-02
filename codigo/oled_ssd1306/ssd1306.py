@@ -1,5 +1,9 @@
 #MicroPython SSD1306 OLED driver, I2C and SPI interfaces created by Adafruit
 
+# Add methods line, vline, hline, rect using framebuffer
+
+v = '0.9'
+
 import time
 import framebuf
 
@@ -92,6 +96,18 @@ class SSD1306:
 
     def pixel(self, x, y, col):
         self.framebuf.pixel(x, y, col)
+
+    def vline(self, x, y, length, color):
+        self.framebuf.vline(x, y,  length, color)
+
+    def hline(self, x, y, length, color):
+        self.framebuf.hline(x, y, length,  color)
+
+    def rect(self, x, y, w, h, color):
+        self.framebuf.rect(x,y,w,h,color)
+    
+    def line(self, x0, y0, x1, y1, color):
+        self.framebuf.line( x0, y0, x1, y1, color)
 
     def scroll(self, dx, dy):
         self.framebuf.scroll(dx, dy)

@@ -153,12 +153,14 @@ m:
 		4.1.Tipos_formatos.md \
 		4.2.0.ADC.md \
 		4.2.1.ADC_esp32.md \
+		4.2.3.ADC_pico.md \
 		4.2.4.ADC_microbit.md \
 		4.3.0.SensoresAnalogicos.md \
 		4.3.2.Controlando_brillo_led.md \
 		4.4.0.Concionales_2.md \
 		4.5.0.DAC.md \
-		4.5.1.sonido_microbit.md \
+		4.5.1.Sonido_avanzado.md \
+		4.5.2.sonido_microbit.md \
 		4.6.MedidaBateria.md \
 		4.7.proyectos.md
 

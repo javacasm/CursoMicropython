@@ -1,0 +1,6 @@
+>>> response = get('http://192.168.1.114/led/27/0')
+>>> response = get('http://192.168.1.114/led/26/1')
+>>> response = get('http://192.168.1.114/pwm/25/500')
+>>> response = get('http://192.168.1.114/pwm/25/1000')
+>>> response = get('http://192.168.1.114/adc/34')
+>>> get('http://192.168.1.114/adc/34')

@@ -6,8 +6,7 @@ import random
 v= '0.5'
 
 # Creamos el objeto i2c con los pines 21 (SCL)  y 22 (SDA)
-i2c = machine.SoftI2C(scl = machine.Pin(21), sda = machine.Pin(22))
-
+i2c = machine.SoftI2C(scl = machine.Pin(22), sda = machine.Pin(21))
 
 oled_width = 128 # ancho
 oled_height = 64 # alto

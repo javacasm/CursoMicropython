@@ -6,7 +6,7 @@ https://www.ti.com/lit/ds/symlink/ina219.pdf
 original from https://sergei.nz/interfacing-ina219-board-with-micropython
 updated by @javacasm
 """
-v = 0.6
+v = 0.7
 
 MAX_CURRENT = 3.2 # Amps
 CURRENT_LSB = MAX_CURRENT/(2**15)
@@ -23,6 +23,8 @@ CALIBRATION_R = 0x05
 DEFAULT_ADDRESS = 0x40 # 0x44
 
 i2c = None 
+
+avoid_address = []
 
 def init_i2c(pinSDA,pinSCL):
     global i2c
@@ -41,7 +43,10 @@ def init_all(pinSDA,pinSCL,devs = None):
         devs = i2c.scan()
         print(devs)
     for address in devs:
-        init_ina219(address=address)
+        if address not in avoid_address:
+            init_ina219(address=address)
+        else:
+            devs.remove(address)
     return devs
 
 def read_current(address = DEFAULT_ADDRESS):
@@ -68,6 +73,6 @@ def read_all(devs = None):
         i = read_current_ma(address=address)
         data.append(v)
         data.append(i)
-        print(f'@{address} {v}v {i}ma',end=' ')
-    print()
+    #    print(f'@{address} {v}v {i}ma',end=' ')
+    # print()
     return data

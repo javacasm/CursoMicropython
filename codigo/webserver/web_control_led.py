@@ -2,9 +2,9 @@ import socket
 import machine
 import network
 
-v = 0.4
+v = 0.5
 
-led = machine.Pin(19,machine.Pin.OUT)
+led = machine.Pin(2,machine.Pin.OUT)
 
 
 def start_webServer(puerto = 80):
@@ -42,9 +42,12 @@ def start_webServer(puerto = 80):
               <p><a href="/led_off" >Apagar LED</a></p>
               </body>
               </html>'''
-        # print(html)     
+        print(html)     
         conn.send('HTTP/1.1 200 OK\n')
         conn.send('Content-Type: text/html\n')
         conn.send('Connection: close\n\n')
         conn.sendall(html)
         conn.close()
+
+if __name__ == '__main__':
+    start_webServer()

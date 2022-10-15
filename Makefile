@@ -52,7 +52,6 @@ m:
 		Cabecera.md        \
 		Cabecera_latex.md \
 		0.0.Presentacion.md \
-		0.1.Que_podemos_hacer_con_micropython.md \
 		0.2.intro.md \
 		0.3.Indice.md \
 		1.0.Micropython.md \
@@ -63,6 +62,9 @@ m:
 		1.2.2.2.WemosD1R32.md \
 		1.2.2.3.TTGO_TFT.md \
 		1.2.2.4.ESPCAM.md \
+		1.2.2.9.ESP32-keyestudio.md \
+		1.2.2.10.Adafruit_Feather_Huzzah.md \
+		1.2.2.13.STEAMAKERS.md \
 		1.2.3.0.ESP8266.md \
 		1.2.3.1.WemosD1.md \
 		1.2.3.2.NodeMCU.md \
@@ -72,7 +74,7 @@ m:
 		1.3.3.m5StickC.md \
 		1.4.Lego_EV3.md \
 		1.5.RaspiPico.md \
-		1.6.microbit.md \
+		1.6.0.microbit.md \
 		1.7.0.Sonoff.md \
 		1.9.Simulador.md
 	
@@ -111,8 +113,9 @@ m:
 		3.0.2.Entrada_salida.md \
 		3.0.5.Modulos_python.md \
 		3.1.0.Hello_Led.md \
-		3.1.1.Hello_led_pico.md \
-		3.1.2.Hello_microbit.md \
+		3.1.1.Pines_ESP32.md \
+		3.1.2.Hello_led_pico.md \
+		3.1.3.Hello_microbit.md \
 		3.2.0.ficheros_codigo.md \
 		3.2.1.retardos.md \
 		3.2.2.bucles.md \

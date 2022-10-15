@@ -43,6 +43,13 @@ SRAM	SRAM de 520 kB
 
 [firmware y detalles](https://github.com/Xinyuan-LilyGO/TTGO-T-Display)
 
+## ESP32 Keyestudio
+
+
+[documentación ESP32](file:///home/javacasm/Descargas/KS0413%20Keyestudio%20ESP32%20Core%20Board%20(Black%20and%20Eco-friendly).pdf)
+
+[documentación shield](file:///home/javacasm/Descargas/KS0465%20keyestudio%20ESP32-IO%20Shield.pdf)
+
 
 ## m5stack
 

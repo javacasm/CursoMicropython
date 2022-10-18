@@ -1,7 +1,13 @@
-# info from https://github.com/DFRobot/pxt-maqueen/blob/master/maqueen.ts
+## modulo para controlar maqueen desde micro:bit
+
+# License CC by SA @javacasm 2022
+
+# basado en el codigo de la extension original de DFRobot
+# de https://github.com/DFRobot/pxt-maqueen/blob/master/maqueen.ts
+
 from microbit import *
 
-v = 0.3
+v = 0.4
 
 motor_driver_address = 0x10
 

@@ -1,3 +1,6 @@
+# Kitronik Pico Robotics board
+#from https://github.com/KitronikLtd/Kitronik-Pico-Robotics-Board-MicroPython
+
 import machine
 import utime
 
@@ -93,9 +96,11 @@ class KitronikPicoRobotics:
             
         motorReg = self.MOT_REG_BASE + (2 * (motor - 1) * self.REG_OFFSET)
         PWMVal = int(speed * 40.95)
+        print(f'motor {motor}: power:{PWMVal} dir:{direction} ',end='')
         lowByte = PWMVal & 0xFF
         highByte = (PWMVal>>8) & 0xFF #motors can use all 0-4096
         #print (motor, direction, "LB ",lowByte," HB ",highByte)
+        print(f'low {lowByte}: high:{highByte} @ {motorReg}')
         if direction == "f":
             self.i2c.writeto_mem(self.CHIP_ADDRESS, motorReg,bytes([lowByte]))
             self.i2c.writeto_mem(self.CHIP_ADDRESS, motorReg+1,bytes([highByte]))
@@ -168,5 +173,6 @@ class KitronikPicoRobotics:
         sda=machine.Pin(sda)
         scl=machine.Pin(scl)
         self.i2c=machine.I2C(0,sda=sda, scl=scl, freq=100000)
+        print(self.i2c.scan())
         self.initPCA()
          

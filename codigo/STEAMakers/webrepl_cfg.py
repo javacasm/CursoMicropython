@@ -1,1 +1,1 @@
-PASS = 'YOURPASSWORD'
+PASS = 'patatin55'

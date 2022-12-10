@@ -31,6 +31,7 @@ while True:
 
 ### ADCs
 
+Además de las 3 entradas digitales
 
 Test del sensor de temperatura interno
 
@@ -52,10 +53,70 @@ while True:
 
 ### Wifi
 
+from network import WLAN,STA_IF
+from time import sleep
+wl = WLAN(STA_IF)
+if wl.active() == False:
+    wl.active(True)
+if wl.isconnected() == False:
+    wl.connect('OpenWrt','qazxcvbgtrewsdf')
+while wl.isconnected() == False:
+    print('.', end='')
+    sleep(1)
+
+print(f'IP: {wl.ifconfig()}')
+
+Lo ponemos en boot
+
+#### Check wifi
+
+
+from network import WLAN,STA_IF
+w=WLAN(STA_IF)
+if w.isconnected():
+    print(f'http://{w.ifconfig()[0]} (/ - LED/<state> - /sensor)')
+    app.run(port=WEB_PORT)
+else:
+    print('no network available') 
+
 
 ### Servidor web
 
-Servidor web con microdot
+Servidor web con [microdot](https://github.com/miguelgrinberg/microdot)
+
+[documentación](https://microdot.readthedocs.io/en/latest/index.html)
+
+
+from microdot import Microdot
+
+v = '0.3'
+
+# creamos el servidor web
+app = Microdot()
+
+WEB_PORT = 80
+
+@app.route('/')
+def index(request):
+    sMsg = 'Hello, HTML world!'
+    return sMsg
+
+@app.route('/html')
+def index_html(request)
+    sMsg = '<H1>Hello, HTML world!</H1>'
+    # contenido, tipo, resultado
+    return sMsg, {'Content-Type': 'text/html'}, 200
+
+## Comprobamos que el wifi esta activado y operativo
+from network import WLAN,STA_IF
+w=WLAN(STA_IF)
+if w.isconnected():
+    print(f'http://{w.ifconfig()[0]}')
+    # arrancamos la web
+    app.run(port = WEB_PORT)
+else:
+    print('no hay wifi disponible')        
+
 
 
 Usamos led y leemos temperatura

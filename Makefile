@@ -29,14 +29,14 @@ m:
 		1.6.1.microbit_v2.md \
 		2.7.0.Instalacion_microbit.md \
 		2.7.1.mejora_microbit_v2.md \
-		3.1.2.Hello_microbit.md \
+		3.1.3.Hello_microbit.md \
 		3.2.3.2.led_externo_microbit.md \
 		3.2.3.3.microbit_pines.md \
 		3.6.2.Botones_microbit.md \
 		3.8.2.microbit_touch_v2.md \
 		3.9.2.PWM_microbit.md \
 		4.2.4.ADC_microbit.md \
-		4.5.1.sonido_microbit.md \
+		4.5.2.sonido_microbit.md \
 		5.12.I2C_microbit_v2.md \
 		p.estroboscopio_microbit.md \
 		microbit_display_av.md \

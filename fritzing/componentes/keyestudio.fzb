@@ -1,93 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module fritzingVersion="0.9.9b.2021-09-22.CD-348-0-f0af53a9" icon="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;svg width=&quot;8.46667mm&quot; height=&quot;8.74889mm&quot;&#10; viewBox=&quot;0 0 30 31&quot;&#10; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;  version=&quot;1.2&quot; baseProfile=&quot;tiny&quot;&gt;&#10;&lt;title&gt;Fritzing Custom Icon&lt;/title&gt;&#10;&lt;desc&gt;Generated with Qt&lt;/desc&gt;&#10;&lt;defs&gt;&#10;&lt;/defs&gt;&#10;&lt;g fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;1&quot; fill-rule=&quot;evenodd&quot; stroke-linecap=&quot;square&quot; stroke-linejoin=&quot;bevel&quot; &gt;&#10;&#10;&lt;image x=&quot;0&quot; y=&quot;0&quot; width=&quot;30&quot; height=&quot;31&quot; preserveAspectRatio=&quot;none&quot; xlink:href=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAMAAADHso01AAAAKlBMVEUAAACyMCWyMCWyMCWyMCWyMCWyMCWyMCWyMCWyMCWyMCWyMCWyMCX///8TrXlEAAAADHRSTlMAIL+fUEDfz4Bg7xDrAx85AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWElEQVQokd2RQRLAIAgDVbS1mv+/11NbAZ3c3esOAyEhHE9ML7LSgo/sbfktLq/vSaNa+8wWLWrbm9Iw11UYigplLdIm1GqcTJPd7HKSm32N/Zw0xvo+jAG5XQp/KqDemwAAAABJRU5ErkJggg==&quot; /&gt;&#10;&lt;/g&gt;&#10;&lt;/svg&gt;&#10;">
+<module fritzingVersion="0.9.10b.2022-07-01.CD-2134-0-40d23c29" icon="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;svg width=&quot;8.46667mm&quot; height=&quot;8.74889mm&quot;&#10; viewBox=&quot;0 0 30 31&quot;&#10; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;  version=&quot;1.2&quot; baseProfile=&quot;tiny&quot;&gt;&#10;&lt;title&gt;Fritzing Custom Icon&lt;/title&gt;&#10;&lt;desc&gt;Generated with Qt&lt;/desc&gt;&#10;&lt;defs&gt;&#10;&lt;/defs&gt;&#10;&lt;g fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;1&quot; fill-rule=&quot;evenodd&quot; stroke-linecap=&quot;square&quot; stroke-linejoin=&quot;bevel&quot; &gt;&#10;&#10;&lt;image x=&quot;0&quot; y=&quot;0&quot; width=&quot;30&quot; height=&quot;31&quot; preserveAspectRatio=&quot;none&quot; xlink:href=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAMAAADHso01AAAAKlBMVEUAAACyMCWyMCWyMCWyMCWyMCWyMCWyMCWyMCWyMCWyMCWyMCWyMCX///8TrXlEAAAADHRSTlMAIL+fUEDfz4Bg7xDrAx85AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWElEQVQokd2RQRLAIAgDVbS1mv+/11NbAZ3c3esOAyEhHE9ML7LSgo/sbfktLq/vSaNa+8wWLWrbm9Iw11UYigplLdIm1GqcTJPd7HKSm32N/Zw0xvo+jAG5XQp/KqDemwAAAABJRU5ErkJggg==&quot; /&gt;&#10;&lt;/g&gt;&#10;&lt;/svg&gt;&#10;">
     <title>keyestudio</title>
     <instances>
-        <instance moduleIdRef="keyestudio Uno_e0ff487865becda1ee72769049fbdce1_5" modelIndex="5796" path="/home/javacasm/Documentos/Fritzing/parts/contrib/keyestudio Uno_e0ff487865becda1ee72769049fbdce1_5.fzp">
+        <instance moduleIdRef="ky_006_1" modelIndex="5832" path="/tmp/.mount_fritziOQymPx/fritzing-parts/core/ky_006_1.fzp">
             <views/>
         </instance>
-        <instance moduleIdRef="keyestudio MEGA 2560_5fe3d1ceac752657dde6ebe83b756eef_5" modelIndex="85493892" path="/home/javacasm/Documentos/Fritzing/parts/contrib/keyestudio MEGA 2560_5fe3d1ceac752657dde6ebe83b756eef_5.fzp">
+        <instance moduleIdRef="ks0032_75872a56b8c563b8dbb0a29cdf319687_6" modelIndex="85511908" path="/home/javacasm/Documentos/Fritzing/parts/user/ks0032_75872a56b8c563b8dbb0a29cdf319687_6.fzp">
             <views/>
         </instance>
-        <instance moduleIdRef="keyes_ae854e7e9ddfba80a9b46070df43bf20_2" modelIndex="5792" path="/home/javacasm/Documentos/Fritzing/parts/contrib/keyes_ae854e7e9ddfba80a9b46070df43bf20_2.fzp">
+        <instance moduleIdRef="ks0271_6adbf73e674ebdf5bdcb781b7547e5db_6" modelIndex="85511910" path="/home/javacasm/Documentos/Fritzing/parts/user/ks0271_6adbf73e674ebdf5bdcb781b7547e5db_6.fzp">
             <views/>
         </instance>
-        <instance moduleIdRef="ky_006_1" modelIndex="5832" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ky_006_1.fzp">
-            <views/>
-        </instance>
-        <instance moduleIdRef="keyestudio_10bc44161595320d3a4cb9e1306df52c_1" modelIndex="85493893" path="/home/javacasm/Documentos/Fritzing/parts/contrib/keyestudio_10bc44161595320d3a4cb9e1306df52c_1.fzp">
-            <property name="part number" value="Keyestudio #KS0457"/>
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0271_4cc53442365462c1cd0c0336596135e6_2" modelIndex="5826" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0271_4cc53442365462c1cd0c0336596135e6_2.fzp">
-            <property name="chip label" value="?"/>
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0172_b42b8458b9b8fe7aca44b6964cafd5bd_3" modelIndex="5818" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0172_b42b8458b9b8fe7aca44b6964cafd5bd_3.fzp">
-            <property name="chip label" value="?"/>
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0061_efc40a9249566038a717d1c015976ae0_6" modelIndex="5812" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0061_efc40a9249566038a717d1c015976ae0_6.fzp">
-            <property name="chip label" value="?"/>
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0088_0e436fdeee60cc5d70f8a1601f1ba41e_2" modelIndex="5816" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0088_0e436fdeee60cc5d70f8a1601f1ba41e_2.fzp">
-            <property name="chip label" value="?"/>
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0234_f7a5892eff21e5288fbe0635ed6c2ccb_2" modelIndex="5824" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0234_f7a5892eff21e5288fbe0635ed6c2ccb_2.fzp">
-            <property name="chip label" value="?"/>
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0055_51f09567a99bd7170d6630ee0aa65846_2" modelIndex="5810" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0055_51f09567a99bd7170d6630ee0aa65846_2.fzp">
-            <property name="chip label" value="?"/>
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0064_71ca1bca94c97e08378ebb8009f74c86_2" modelIndex="5814" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0064_71ca1bca94c97e08378ebb8009f74c86_2.fzp">
-            <property name="chip label" value="?"/>
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0034_044e057786b16b544c1f025b91232963_6" modelIndex="85493916" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0034_044e057786b16b544c1f025b91232963_6.fzp">
-            <property name="part number" value="KS0034"/>
-            <property name="chip label" value="KS0034"/>
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0052_1ac34ebcf42212342368b3efb0067c7b_3" modelIndex="5808" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0052_1ac34ebcf42212342368b3efb0067c7b_3.fzp">
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0232_a682e174dc3fa2174802b6a6f6268c3b_3" modelIndex="85494505" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0232_a682e174dc3fa2174802b6a6f6268c3b_3.fzp">
-            <property name="chip label" value="KS0232"/>
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0029_c659971bbd5779a57a36c1930010837c_3" modelIndex="85494541" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0029_c659971bbd5779a57a36c1930010837c_3.fzp">
-            <property name="chip label" value="KS0029"/>
-            <views/>
-        </instance>
-        <instance moduleIdRef="KY-031_1e877a117b7fbc6ea68a7442e650570d_5" modelIndex="5830" path="/home/javacasm/Documentos/Fritzing/parts/contrib/KY-031_1e877a117b7fbc6ea68a7442e650570d_5.fzp">
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0032_40cf05a43e425d49d26203993d3d2db0_2" modelIndex="5804" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0032_40cf05a43e425d49d26203993d3d2db0_2.fzp">
-            <property name="chip label" value="?"/>
-            <views/>
-        </instance>
-        <instance moduleIdRef="KY-018_b88c740d366f37248c32f93d2830a21d_5" modelIndex="5828" path="/home/javacasm/Documentos/Fritzing/parts/user/KY-018_b88c740d366f37248c32f93d2830a21d_5.fzp">
-            <views/>
-        </instance>
-        <instance moduleIdRef="keyes_7f310f9fdcd3e0c8ad5b1260a0d291d0_3" modelIndex="85494940" path="/home/javacasm/Documentos/Fritzing/parts/user/keyes_7f310f9fdcd3e0c8ad5b1260a0d291d0_3.fzp">
-            <views/>
-        </instance>
-        <instance moduleIdRef="keys0000_4fdbe52d86347d7ab47674ece8a19305_1" modelIndex="85494941" path="/home/javacasm/Documentos/Fritzing/parts/contrib/keys0000_4fdbe52d86347d7ab47674ece8a19305_1.fzp">
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0233_b9d20906943429ab612f4cf3091c8cd4_1" modelIndex="85494959" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0233_b9d20906943429ab612f4cf3091c8cd4_1.fzp">
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0032_40cf05a43e425d49d26203993d3d2db0_2" modelIndex="85494974" path="/home/javacasm/Documentos/Fritzing/parts/contrib/ks0032_40cf05a43e425d49d26203993d3d2db0_2.fzp">
-            <views/>
-        </instance>
-        <instance moduleIdRef="keyes_7f310f9fdcd3e0c8ad5b1260a0d291d0_3" modelIndex="85495109" path="/home/javacasm/Documentos/Fritzing/parts/user/keyes_7f310f9fdcd3e0c8ad5b1260a0d291d0_3.fzp">
-            <views/>
-        </instance>
-        <instance moduleIdRef="ks0271_6adbf73e674ebdf5bdcb781b7547e5db_6" modelIndex="85500422" path="/home/javacasm/Documentos/Fritzing/parts/user/ks0271_6adbf73e674ebdf5bdcb781b7547e5db_6.fzp">
+        <instance moduleIdRef="ks0234_89c2c95803ae20eaba6c52c224ffc378_3" modelIndex="85511912" path="/home/javacasm/Documentos/Fritzing/parts/user/ks0234_89c2c95803ae20eaba6c52c224ffc378_3.fzp">
             <views/>
         </instance>
     </instances>

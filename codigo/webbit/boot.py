@@ -15,7 +15,7 @@ if sta_if.active == False:
 # print(sta_if.scan()) # Scan for available access points
 
 if not sta_if.isconnected():
-    sta_if.connect("Digifibra_4BB8_EXT", "wbbmZZCM3qejbx") # Connect to an AP
+    sta_if.connect("SSID", "WIFI_PASSWORD") # Connect to an AP
     while sta_if.isconnected():
         print('.',end='')
         time.sleep_ms(500)

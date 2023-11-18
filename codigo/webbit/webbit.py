@@ -1,6 +1,6 @@
 # Pines Web:bit
 
-v = 0.4
+v = 0.5
 
 print(f'webbit {v}')
 
@@ -9,13 +9,17 @@ PIN_LDR_RIGHT = 13
 
 PIN_TEMP = 14
 
+PIN_I2C_SDA = 15
+PIN_I2C_SCL = 16
+
+PIN_BUZZER = 17
+
 PIN_NEOPIXEL = 18
+
 N_NEOPIXEL = 25
 
 PIN_BOTON_A = 38
 PIN_BOTON_B = 33
 
-PIN_I2C_SCL = 16
-PIN_I2C_SDA = 15
 
-PIN_BUZZER = 17
+

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curso completo de MicroPython - Programación de microcontroladores con Python. ESP32, micro:bit, m5Stack, Raspberry Pi Pico y más.">
+    <title>Curso MicroPython • javacasm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+        
+        :root {
+            --primary: #00d4ff;
+        }
+        
+        .tail-container * {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .title-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+        }
+        
+        .glass {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(12px);
+        }
+        
+        .news-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .news-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 212 255 / 0.1);
+        }
+        
+        .markdown-content a {
+            color: #00d4ff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="tail-container bg-zinc-950 text-zinc-100">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-6 py-4 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg shadow-cyan-500/50">
+                    μ
+                </div>
+                <div>
+                    <span class="title-font text-2xl font-semibold tracking-tighter">MicroPython</span>
+                    <span class="text-xs text-zinc-400 block -mt-1">Curso • javacasm</span>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#inicio" class="hover:text-cyan-400 transition-colors">Inicio</a>
+                <a href="#temario" class="hover:text-cyan-400 transition-colors">Temario</a>
+                <a href="#lecciones" class="hover:text-cyan-400 transition-colors">Lecciones</a>
+                <a href="#proyectos" class="hover:text-cyan-400 transition-colors">Proyectos</a>
+                <a href="#noticias" class="hover:text-cyan-400 transition-colors">Noticias</a>
+                <a href="#recursos" class="hover:text-cyan-400 transition-colors">Recursos</a>
+            </div>
+
+            <div class="flex items-center gap-x-4">
+                <!-- GitHub -->
+                <a href="https://github.com/javacasm/CursoMicropython" target="_blank"
+                   class="flex items-center gap-x-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm font-medium transition-all">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+
+                <!-- Botón móvil -->
+                <button onclick="toggleMobileMenu()" class="md:hidden w-10 h-10 flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-6 border-t border-white/10 bg-zinc-900">
+            <div class="flex flex-col gap-y-4 text-sm font-medium pt-4">
+                <a href="#inicio" onclick="toggleMobileMenu()" class="hover:text-cyan-400">Inicio</a>
+                <a href="#temario" onclick="toggleMobileMenu()" class="hover:text-cyan-400">Temario</a>
+                <a href="#lecciones" onclick="toggleMobileMenu()" class="hover:text-cyan-400">Lecciones</a>
+                <a href="#proyectos" onclick="toggleMobileMenu()" class="hover:text-cyan-400">Proyectos</a>
+                <a href="#noticias" onclick="toggleMobileMenu()" class="hover:text-cyan-400">Noticias</a>
+                <a href="#recursos" onclick="toggleMobileMenu()" class="hover:text-cyan-400">Recursos</a>
+                <a href="https://github.com/javacasm/CursoMicropython" target="_blank" class="flex items-center justify-center gap-x-2 py-3 bg-cyan-500 text-black rounded-2xl font-semibold">
+                    <i class="fa-brands fa-github"></i>
+                    Ir al repositorio
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-screen-2xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-x-2 px-4 py-2 bg-white/10 rounded-3xl text-sm">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    Curso actualizado 2026
+                </div>
+                
+                <h1 class="title-font text-6xl md:text-7xl font-bold leading-none tracking-tighter">
+                    Programa microcontroladores<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">con Python</span>
+                </h1>
+                
+                <p class="text-xl text-zinc-400 max-w-lg">
+                    El curso más completo de MicroPython en español. 
+                    ESP32, micro:bit, m5Stack, Raspberry Pi Pico y mucho más.
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#temario" 
+                       class="px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-3xl flex items-center gap-x-3 transition-all text-lg">
+                        Ver temario completo
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    
+                    <a href="https://github.com/javacasm/CursoMicropython" target="_blank"
+                       class="px-8 py-4 border border-white/30 hover:border-white/60 rounded-3xl flex items-center gap-x-3 transition-all font-medium">
+                        <i class="fa-brands fa-github"></i>
+                        Repositorio (gratis)
+                    </a>
+                    
+                    <a href="#noticias" 
+                       class="px-8 py-4 border border-white/30 hover:border-white/60 rounded-3xl flex items-center gap-x-3 transition-all">
+                        Últimas noticias
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-x-8 text-sm">
+                    <div class="flex -space-x-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl flex items-center justify-center text-xs ring-2 ring-zinc-950">ESP</div>
+                        <div class="w-8 h-8 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-2xl flex items-center justify-center text-xs ring-2 ring-zinc-950">μbit</div>
+                        <div class="w-8 h-8 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center text-xs ring-2 ring-zinc-950">m5</div>
+                    </div>
+                    <p class="text-zinc-400">Compatible con las placas más populares</p>
+                </div>
+            </div>
+            
+            <!-- Visual Hero -->
+            <div class="relative hidden md:block">
+                <div class="absolute -inset-10 bg-gradient-to-br from-cyan-500/20 to-transparent rounded-[4rem] blur-3xl"></div>
+                <div class="glass border border-white/10 rounded-3xl p-2 shadow-2xl">
+                    <pre class="bg-black text-emerald-400 font-mono text-sm p-8 rounded-2xl overflow-hidden leading-relaxed">
+<span class="text-cyan-400">from</span> machine import Pin
+led = Pin(2, Pin.OUT)
+
+<span class="text-yellow-300">while</span> True:
+    led.value(1)
+    sleep(0.5)
+    led.value(0)
+    sleep(0.5)
+                    </pre>
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-zinc-900 px-6 py-3 rounded-2xl shadow-xl border border-cyan-400/30 flex items-center gap-x-3">
+                    <i class="fa-solid fa-microchip text-cyan-400 text-2xl"></i>
+                    <div>
+                        <div class="font-semibold">+12 placas soportadas</div>
+                        <div class="text-xs text-zinc-400">MicroPython v1.23+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEMARIO -->
+    <section id="temario" class="py-24 bg-zinc-900">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <span class="uppercase tracking-[2px] text-cyan-400 text-sm font-medium">9 módulos • +80 lecciones</span>
+                    <h2 class="title-font text-5xl font-semibold tracking-tighter">Temario del curso</h2>
+                </div>
+                <a href="https://github.com/javacasm/CursoMicropython/blob/master/0.3.Indice.md" target="_blank"
+                   class="text-cyan-400 hover:text-cyan-300 flex items-center gap-x-2 text-sm font-medium">
+                    Ver índice completo en Markdown
+                    <i class="fa-solid fa-external-link-alt"></i>
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Módulo 1 -->
+                <div class="glass border border-white/10 rounded-3xl p-8 hover:border-cyan-400/30 group">
+                    <div class="text-cyan-400 text-xl font-bold mb-2">01</div>
+                    <h3 class="text-2xl font-semibold mb-3 group-hover:text-cyan-400 transition-colors">Introducción a MicroPython</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Historia, versiones, placas compatibles (ESP32, micro:bit, m5Stack, Raspberry Pico…)</p>
+                </div>
+                
+                <!-- Módulo 2 -->
+                <div class="glass border border-white/10 rounded-3xl p-8 hover:border-cyan-400/30 group">
+                    <div class="text-cyan-400 text-xl font-bold mb-2">02</div>
+                    <h3 class="text-2xl font-semibold mb-3 group-hover:text-cyan-400 transition-colors">Entornos y primeras pruebas</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Thonny, VS Code, instalación de firmware y “Hello World” en tu placa</p>
+                </div>
+                
+                <!-- Módulo 3 -->
+                <div class="glass border border-white/10 rounded-3xl p-8 hover:border-cyan-400/30 group">
+                    <div class="text-cyan-400 text-xl font-bold mb-2">03</div>
+                    <h3 class="text-2xl font-semibold mb-3 group-hover:text-cyan-400 transition-colors">Entrada / Salida</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">LEDs, botones, PWM, relés, motores, LEDs RGB</p>
+                </div>
+                
+                <!-- Módulo 4 -->
+                <div class="glass border border-white/10 rounded-3xl p-8 hover:border-cyan-400/30 group">
+                    <div class="text-cyan-400 text-xl font-bold mb-2">04</div>
+                    <h3 class="text-2xl font-semibold mb-3 group-hover:text-cyan-400 transition-colors">ADC y DAC</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Sensores analógicos y control de alumbrado</p>
+                </div>
+                
+                <!-- Módulo 5 -->
+                <div class="glass border border-white/10 rounded-3xl p-8 hover:border-cyan-400/30 group">
+                    <div class="text-cyan-400 text-xl font-bold mb-2">05</div>
+                    <h3 class="text-2xl font-semibold mb-3 group-hover:text-cyan-400 transition-colors">Módulos y librerías</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Sensores, SD, tiras LED, estación meteorológica</p>
+                </div>
+                
+                <!-- Módulo 6 -->
+                <div class="glass border border-white/10 rounded-3xl p-8 hover:border-cyan-400/30 group">
+                    <div class="text-cyan-400 text-xl font-bold mb-2">06</div>
+                    <h3 class="text-2xl font-semibold mb-3 group-hover:text-cyan-400 transition-colors">Conexión a redes</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">WiFi, Bluetooth, servidor web</p>
+                </div>
+                
+                <!-- Módulo 7 -->
+                <div class="glass border border-white/10 rounded-3xl p-8 hover:border-cyan-400/30 group">
+                    <div class="text-cyan-400 text-xl font-bold mb-2">07</div>
+                    <h3 class="text-2xl font-semibold mb-3 group-hover:text-cyan-400 transition-colors">IoT y MQTT</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Publicación en la nube y control remoto</p>
+                </div>
+                
+                <!-- Módulo 8 -->
+                <div class="glass border border-white/10 rounded-3xl p-8 hover:border-cyan-400/30 group">
+                    <div class="text-cyan-400 text-xl font-bold mb-2">08</div>
+                    <h3 class="text-2xl font-semibold mb-3 group-hover:text-cyan-400 transition-colors">Pantallas gráficas</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">OLED, TFT y interfaces gráficas</p>
+                </div>
+                
+                <!-- Módulo 9 -->
+                <div class="glass border border-white/10 rounded-3xl p-8 hover:border-cyan-400/30 group">
+                    <div class="text-cyan-400 text-xl font-bold mb-2">09</div>
+                    <h3 class="text-2xl font-semibold mb-3 group-hover:text-cyan-400 transition-colors">Módulos avanzados</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Compilar firmware y crear tus propios módulos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LECCIONES & PROYECTOS -->
+    <section id="lecciones" class="py-24">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <h2 class="title-font text-5xl font-semibold tracking-tighter text-center mb-4">Lecciones y proyectos</h2>
+            <p class="text-center text-zinc-400 max-w-2xl mx-auto mb-16">Todo el material está en Markdown y código listo para usar. Accede directamente desde GitHub.</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="https://github.com/javacasm/CursoMicropython/tree/master/documentos" target="_blank"
+                   class="group glass border border-white/10 rounded-3xl p-8 hover:border-cyan-400/40 flex flex-col">
+                    <i class="fa-solid fa-book text-4xl mb-6 text-cyan-400"></i>
+                    <h3 class="text-2xl font-semibold mb-1">Documentos y teoría</h3>
+                    <p class="flex-1 text-zinc-400">Presentaciones, índices y explicaciones detalladas de cada módulo.</p>
+                    <div class="text-cyan-400 text-sm flex items-center gap-x-2 mt-8">Ver carpeta <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i></div>
+                </a>
+                
+                <a href="https://github.com/javacasm/CursoMicropython/tree/master/codigo" target="_blank"
+                   class="group glass border border-white/10 rounded-3xl p-8 hover:border-cyan-400/40 flex flex-col">
+                    <i class="fa-solid fa-code text-4xl mb-6 text-cyan-400"></i>
+                    <h3 class="text-2xl font-semibold mb-1">Código de ejemplos</h3>
+                    <p class="flex-1 text-zinc-400">Todos los scripts listos para copiar y pegar en tu placa.</p>
+                    <div class="text-cyan-400 text-sm flex items-center gap-x-2 mt-8">Ver carpeta <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i></div>
+                </a>
+                
+                <a href="https://github.com/javacasm/CursoMicropython/tree/master/proyectos" target="_blank"
+                   class="group glass border border-white/10 rounded-3xl p-8 hover:border-cyan-400/40 flex flex-col">
+                    <i class="fa-solid fa-rocket text-4xl mb-6 text-cyan-400"></i>
+                    <h3 class="text-2xl font-semibold mb-1">Proyectos finales</h3>
+                    <p class="flex-1 text-zinc-400">Estación meteorológica, control remoto, consola gráfica…</p>
+                    <div class="text-cyan-400 text-sm flex items-center gap-x-2 mt-8">Ver carpeta <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTICIAS (fácil de actualizar) -->
+    <section id="noticias" class="py-24 bg-zinc-900">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="flex justify-between items-baseline mb-12">
+                <h2 class="title-font text-5xl font-semibold tracking-tighter">Últimas noticias</h2>
+                <p class="text-sm text-zinc-400">Añade noticias fácilmente editando el array <span class="font-mono text-cyan-400">news</span> en el código HTML</p>
+            </div>
+            
+            <div id="news-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Se rellena con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section id="recursos" class="py-24">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <h2 class="title-font text-5xl font-semibold tracking-tighter text-center mb-16">Recursos adicionales</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <a href="https://micropython.org/" target="_blank" class="glass p-6 rounded-3xl text-center hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-globe text-4xl mb-4 text-cyan-400"></i>
+                    <div class="font-semibold">Documentación oficial</div>
+                    <div class="text-xs text-zinc-400 mt-1">MicroPython.org</div>
+                </a>
+                <a href="https://github.com/javacasm/CursoMicropython/tree/master/images" target="_blank" class="glass p-6 rounded-3xl text-center hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-image text-4xl mb-4 text-cyan-400"></i>
+                    <div class="font-semibold">Esquemas y Fritzing</div>
+                    <div class="text-xs text-zinc-400 mt-1">Carpeta images + fritzing</div>
+                </a>
+                <a href="https://github.com/javacasm/CursoMicropython/tree/master/modulos" target="_blank" class="glass p-6 rounded-3xl text-center hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-puzzle-piece text-4xl mb-4 text-cyan-400"></i>
+                    <div class="font-semibold">Módulos personalizados</div>
+                    <div class="text-xs text-zinc-400 mt-1">Código listo para importar</div>
+                </a>
+                <a href="https://github.com/javacasm/CursoMicropython/blob/master/LICENSE" target="_blank" class="glass p-6 rounded-3xl text-center hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-scale-balanced text-4xl mb-4 text-cyan-400"></i>
+                    <div class="font-semibold">Licencia CC BY-SA</div>
+                    <div class="text-xs text-zinc-400 mt-1">Puedes usar y compartir</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-16 border-t border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-6 text-zinc-400">
+            <div class="flex flex-col md:flex-row justify-between gap-y-8">
+                <div>
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-2xl flex items-center justify-center text-white text-3xl">μ</div>
+                        <span class="title-font text-3xl font-semibold text-white">MicroPython</span>
+                    </div>
+                    <p class="text-sm">Curso creado por <a href="https://github.com/javacasm" class="text-cyan-400 hover:underline">@javacasm</a></p>
+                    <p class="text-xs mt-6">Licencia Creative Commons BY-SA 4.0</p>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-x-12 text-sm">
+                    <div>
+                        <div class="font-semibold mb-3 text-white">Curso</div>
+                        <a href="#temario" class="block hover:text-white mb-1">Temario</a>
+                        <a href="https://github.com/javacasm/CursoMicropython/blob/master/0.3.Indice.md" class="block hover:text-white">Índice completo</a>
+                    </div>
+                    <div>
+                        <div class="font-semibold mb-3 text-white">Comunidad</div>
+                        <a href="https://github.com/javacasm/CursoMicropython/issues" class="block hover:text-white mb-1">Reportar errores</a>
+                        <a href="https://github.com/javacasm/CursoMicropython/discussions" class="block hover:text-white">Discusiones</a>
+                    </div>
+                    <div>
+                        <div class="font-semibold mb-3 text-white">Enlaces</div>
+                        <a href="https://micropython.org/" class="block hover:text-white mb-1">MicroPython oficial</a>
+                        <a href="https://www.youtube.com/c/JoseAntonioVacasMartinez" class="block hover:text-white">Canal de YouTube</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center text-xs mt-16 opacity-50">
+                Página estática • Fácil de actualizar • Publica en GitHub Pages en 1 clic
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            tailwind.config = {
+                content: [],
+                theme: {
+                    extend: {}
+                }
+            }
+        }
+        
+        // Datos de noticias (¡MUY FÁCIL DE ACTUALIZAR!)
+        // Solo añade o edita objetos aquí. El resto es automático.
+        const news = [
+            {
+                date: "20 Abril 2026",
+                title: "Curso actualizado a MicroPython 1.23",
+                summary: "Nuevos ejemplos para Raspberry Pi Pico 2 y soporte mejorado para ESP32-C6.",
+                link: "https://github.com/javacasm/CursoMicropython/commit/latest"
+            },
+            {
+                date: "15 Marzo 2026",
+                title: "Nuevo proyecto: Control de caldera por MQTT",
+                summary: "Ejemplo completo de IoT con dashboard web y notificaciones Telegram.",
+                link: "https://github.com/javacasm/CursoMicropython/tree/master/proyectos/caldera-mqtt"
+            },
+            {
+                date: "10 Febrero 2026",
+                title: "Añadidos 12 nuevos ejemplos para micro:bit V2",
+                summary: "Sensores, radio y gráficos en tiempo real. ¡Todo listo para copiar!",
+                link: "https://github.com/javacasm/CursoMicropython/tree/master/codigo/microbit"
+            }
+            // ← Añade más noticias aquí. El orden es del más reciente al más antiguo.
+        ]
+        
+        function renderNews() {
+            const container = document.getElementById('news-container')
+            container.innerHTML = ''
+            
+            news.forEach(item => {
+                const cardHTML = `
+                <div class="news-card glass border border-white/10 rounded-3xl p-8 flex flex-col h-full">
+                    <div class="text-xs font-mono text-cyan-400 mb-4">${item.date}</div>
+                    <h4 class="text-xl font-semibold mb-3 leading-tight">${item.title}</h4>
+                    <p class="text-zinc-400 flex-1">${item.summary}</p>
+                    <a href="${item.link}" target="_blank" 
+                       class="mt-6 inline-flex items-center text-sm font-medium text-cyan-400 hover:text-cyan-300">
+                        Leer más 
+                        <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>`
+                container.innerHTML += cardHTML
+            })
+            
+            // Si no hay noticias
+            if (news.length === 0) {
+                container.innerHTML = `
+                <div class="col-span-full text-center py-12">
+                    <p class="text-zinc-400">Todavía no hay noticias. ¡Añade la primera en el array <span class="font-mono">news</span>!</p>
+                </div>`
+            }
+        }
+        
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu')
+            const icon = document.getElementById('menu-icon')
+            menu.classList.toggle('hidden')
+            icon.classList.toggle('fa-bars')
+            icon.classList.toggle('fa-xmark')
+        }
+        
+        // Inicialización
+        window.onload = function() {
+            initializeTailwind()
+            renderNews()
+            
+            console.log('%c✅ Página del Curso MicroPython cargada correctamente. ¡Listo para publicar en GitHub Pages!', 'color:#00d4ff; font-family:monospace')
+        }
+    </script>
+</body>
+</html>
